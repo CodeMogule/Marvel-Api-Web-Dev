@@ -1,0 +1,118 @@
+/* SETUP */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 20px;
+    background-color: rgb(218, 216, 216);
+    font-family: lato;
+    text-rendering: optimizeLegibility;
+}
+
+.row{
+    margin: auto;
+    width: 1140px;
+}
+
+/* HEADER */
+
+header{
+    background-image:linear-gradient(rgba(22, 22, 22, 0.671),rgb(22, 22, 22)),url(../IMAGES/Hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-top:-27px ;
+}
+
+header h1{
+    font-family: warden typeface;
+    color: #DA0000;
+    padding: 60px;
+}
+
+/* Navigation*/
+.main-lists{
+    list-style: none;
+    transform: translate(-160px,-127px);
+}
+
+.main-lists li{
+    display: inline-block;
+    font-size: 130%;
+    margin: 10px;
+    float: right;
+}
+
+.main-lists li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.4s;
+}
+
+.main-lists li a:hover{
+    color:#DA0000 ;
+    opacity: 1;
+}
+
+.main-lists li a:hover::after{
+    opacity: 1;
+}
+
+.main-lists li a::after{
+    content:"";
+    display: block;
+    width: 75%;
+    margin: auto;
+    border-bottom: 2px solid white;
+    transition: 0.4s;
+    opacity: 0;
+    position: relative;
+    top: 6px;
+}
+
+/* SEARCH BOX*/
+header input{
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 90%;
+    float: right;
+    padding: 10px;
+    transform: translate(-40px,-200px);
+}
+
+/*carousels*/
+.carousel-inner{
+    overflow:unset;
+    width: 100%;
+}
+
+.carousel-header{
+    margin: -70px;
+    padding-left: 15%;
+}
+
+.carousel-paragraph{
+    font-size: 70%;
+    color: white;
+    text-align: justify;
+    width: 40%;
+    line-height: 1.7;
+    padding-left: 10.5%;
+    margin-top: 10px;
+}
+
+.spider-man{
+max-width: 30%;
+height: auto;
+float: right;
+transform: translate(-45%,-75%);
+margin: 30px;
+object-fit: contain;
+}
+
+
+
