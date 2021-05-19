@@ -95,6 +95,28 @@ header input{
     padding-left: 15%;
 }
 
+.carousel-control-prev{
+  margin: -200px;
+}
+
+.carousel-control-prev-icon{
+    color: white;
+    width: 20px;
+    height: 20px;
+   transform: translate(100px,-250px);
+}
+
+.carousel-control-next{
+    margin: 200px;
+}
+
+.carousel-control-next-icon{
+    color: white;
+    width: 20px;
+    height: 20px;
+    transform: translate(1400%,-1180%);
+}
+
 .carousel-paragraph{
     font-size: 70%;
     color: white;
@@ -110,6 +132,24 @@ max-width: 30%;
 height: auto;
 float: right;
 transform: translate(-45%,-75%);
+margin: 30px;
+object-fit: contain;
+}
+
+.iron-man{
+    max-width: 30%;
+height: auto;
+float: right;
+transform: translate(-45%,-75%);
+margin: 30px;
+object-fit: contain;
+}
+
+.captain-america{
+    max-width: 30%;
+height: auto;
+float: right;
+transform: translate(-45%,-80%);
 margin: 30px;
 object-fit: contain;
 }
