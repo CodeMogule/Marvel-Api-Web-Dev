@@ -91,6 +91,7 @@ header input{
     max-height:0 ;
     padding-left:10% ;
     display: none;
+    animation: slide_right 1.3s ease ;
 }
 
 .slider-custom h1{
@@ -177,6 +178,7 @@ button{
     height: 13px;
     width: 13px;
     cursor: pointer;
+    transition: 0.4s;
 }
 
 .active{
@@ -187,5 +189,15 @@ button{
 background: white;
 }
 
+/* slide animation*/
+@keyframes slide_right{
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
 
 

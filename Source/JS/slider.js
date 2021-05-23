@@ -6,6 +6,13 @@
 
  sliderWipe(counter)
 
+ let timer = setInterval(automaticSlide,9000)
+
+ function automaticSlide(){
+counter+=1
+sliderWipe(counter)
+ }
+
  function addSlider(x){
      counter+=x
      sliderWipe(counter)
@@ -27,7 +34,7 @@
          dots[i].classList.remove('active')
      }
 
-     if(x>slider.length){
+    if(x>slider.length){
          counter = 1
      }
 
