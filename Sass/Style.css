@@ -213,11 +213,17 @@ button {
 #characters .character-btn button {
   float: right;
   padding: 5px;
+  transition: 0.5s;
   transform: translate(0, -3.5rem);
   -webkit-transform: translate(0, -3.5rem);
   -moz-transform: translate(0, -3.5rem);
   -ms-transform: translate(0, -3.5rem);
   -o-transform: translate(0, -3.5rem);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  border: transparent;
 }
 
 #characters .character-btn i {
@@ -229,7 +235,12 @@ button {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  padding: 8px;
+  padding: 10px;
+}
+
+#characters .character-btn i:hover {
+  background-color: #7a0000;
+  border: transparent;
 }
 
 #characters .img-item-container {
@@ -243,9 +254,72 @@ button {
 #characters .img-item-container li {
   width: 100%;
   height: auto;
+  position: relative;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+#characters .img-item-container li:hover {
+  transform: translateY(-5%);
+  -webkit-transform: translateY(-5%);
+  -moz-transform: translateY(-5%);
+  -ms-transform: translateY(-5%);
+  -o-transform: translateY(-5%);
+}
+
+#characters .img-item-container li a {
+  text-decoration: none;
+  display: inline-block;
+  position: absolute;
+  bottom: 0%;
+  left: 15%;
+  height: 65px;
+}
+
+#characters .img-item-container li a .border-design #BG {
+  opacity: 0.9;
+}
+
+#characters .img-item-container li a .border-design .bg {
+  fill: #DA0000;
+}
+
+#characters .img-item-container li a .border-design .outline-2 {
+  fill: transparent;
+}
+
+#characters .img-item-container li a h3 {
+  font-size: 150%;
+  text-align: center;
+  color: #fff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
+  transform: translateY(-130%);
+  -webkit-transform: translateY(-130%);
+  -moz-transform: translateY(-130%);
+  -ms-transform: translateY(-130%);
+  -o-transform: translateY(-130%);
 }
 
 #characters .img-item-container li img {
+  width: 450px;
+  height: 600px;
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+#characters .img-item-container li img:hover {
+  border: 5px solid #DA0000;
+}
+
+#comics img {
   width: 450px;
   height: 600px;
   cursor: pointer;
