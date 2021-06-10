@@ -3,6 +3,7 @@
         color: $perfect-black;
         font-family: warden typeface;
         padding-top: 50px;
+        text-transform: lowercase;
     }
 
     .character-btn{
@@ -11,15 +12,8 @@
             float: right;
             padding: 5px;
             transition: 0.5s;
-            transform: translate(0,-3.5rem)        ;
-            -webkit-transform: translate(0,-3.5rem)        ;
-            -moz-transform: translate(0,-3.5rem)        ;
-            -ms-transform: translate(0,-3.5rem)        ;
-            -o-transform: translate(0,-3.5rem)        ;
-            -webkit-transition: 0.5s;
-            -moz-transition: 0.5s;
-            -ms-transition: 0.5s;
-            -o-transition: 0.5s;
+          @include red-btn-body-position;
+            @include transition-btn;
             border: transparent;       
 }
         i{
@@ -46,9 +40,10 @@
         list-style: none;
 
         li{
-            width: 100%;
+            width: 50%;
             height: auto;
             position: relative;
+            margin-right: -15%;
             transition: 0.5s;
             -webkit-transition: 0.5s;
             -moz-transition: 0.5s;
@@ -56,11 +51,7 @@
             -o-transition: 0.5s;
 
             &:hover{
-                transform: translateY(-5%);
-                -webkit-transform: translateY(-5%);
-                -moz-transform: translateY(-5%);
-                -ms-transform: translateY(-5%);
-                -o-transform: translateY(-5%);
+               @include up-movement;
 }
 
             
@@ -71,8 +62,8 @@
                     text-decoration: none;
                     display: inline-block;
                     position: absolute;
-                bottom: 0%;
-                left: 15%;
+                bottom: 0;
+                left: 0;
                 height: 65px;
 
                     .border-design{
@@ -107,18 +98,23 @@
             
 
             img{
-                width: 450px;
-                height: 600px;
+                width: 300px;
+                height: 350px;
                 cursor: pointer;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
                 transition: 0.5s;
                 -webkit-transition: 0.5s;
                 -moz-transition: 0.5s;
                 -ms-transition: 0.5s;
                 -o-transition: 0.5s;
-
                 &:hover{
                     border: 5px solid $my-red;
-            }
+                }
+                
         }
     }
 }

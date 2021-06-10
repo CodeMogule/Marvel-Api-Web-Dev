@@ -208,6 +208,7 @@ button {
   color: #231e23;
   font-family: warden typeface;
   padding-top: 50px;
+  text-transform: lowercase;
 }
 
 #characters .character-btn button {
@@ -252,9 +253,10 @@ button {
 }
 
 #characters .img-item-container li {
-  width: 100%;
+  width: 50%;
   height: auto;
   position: relative;
+  margin-right: -15%;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -274,8 +276,8 @@ button {
   text-decoration: none;
   display: inline-block;
   position: absolute;
-  bottom: 0%;
-  left: 15%;
+  bottom: 0;
+  left: 0;
   height: 65px;
 }
 
@@ -305,9 +307,14 @@ button {
 }
 
 #characters .img-item-container li img {
-  width: 450px;
-  height: 600px;
+  width: 300px;
+  height: 350px;
   cursor: pointer;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -319,10 +326,173 @@ button {
   border: 5px solid #DA0000;
 }
 
+#comics {
+  padding-top: 150px;
+}
+
+#comics h1 {
+  color: #231e23;
+  font-family: warden typeface;
+  padding-top: 50px;
+  text-transform: lowercase;
+}
+
+#comics .comic-btn a {
+  float: right;
+  padding: 7px;
+  font-size: 90%;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transform: translate(0, -3.5rem);
+  -webkit-transform: translate(0, -3.5rem);
+  -moz-transform: translate(0, -3.5rem);
+  -ms-transform: translate(0, -3.5rem);
+  -o-transform: translate(0, -3.5rem);
+  border: transparent;
+  text-decoration: none;
+  border: 2px solid #DA0000;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #DA0000;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+#comics .comic-btn a:hover {
+  background-color: #7a0000;
+  border-color: #7a0000;
+}
+
+#comics .box {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+#comics .box:hover {
+  transform: translateY(-5%);
+  -webkit-transform: translateY(-5%);
+  -moz-transform: translateY(-5%);
+  -ms-transform: translateY(-5%);
+  -o-transform: translateY(-5%);
+}
+
+#comics .box h3 {
+  font-size: 80%;
+}
+
+#comics .box p {
+  font-size: 60%;
+}
+
+#comics .box .rating ul {
+  position: relative;
+  bottom: 20px;
+}
+
+#comics .box .rating ul li {
+  list-style: none;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#comics .box .rating ul li i {
+  font-size: 80%;
+  color: #e5d549;
+}
+
+#comics .box .rating ul li:last-child {
+  left: 13%;
+  font-size: 80%;
+  transform: translate(0, 13%);
+  -webkit-transform: translate(0, 13%);
+  -moz-transform: translate(0, 13%);
+  -ms-transform: translate(0, 13%);
+  -o-transform: translate(0, 13%);
+}
+
 #comics img {
-  width: 450px;
-  height: 600px;
+  width: 100%;
+  height: auto;
   cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+#marvel-games {
+  padding-top: 150px;
+}
+
+#marvel-games h1 {
+  color: #231e23;
+  font-family: warden typeface;
+  padding-top: 50px;
+  text-transform: lowercase;
+}
+
+#marvel-games .box-game {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+#marvel-games .box-game:hover {
+  transform: translateY(-5%);
+  -webkit-transform: translateY(-5%);
+  -moz-transform: translateY(-5%);
+  -ms-transform: translateY(-5%);
+  -o-transform: translateY(-5%);
+}
+
+#marvel-games .box-game img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+#marvel-games .box-game h3 {
+  font-size: 80%;
+}
+
+#marvel-games .box-game p {
+  font-size: 60%;
+}
+
+footer {
+  background-color: #151515;
+  height: 15vh;
+}
+
+footer .text-footer {
+  padding-top: 20px;
+}
+
+footer h5 {
+  text-align: center;
+  color: #fff;
+}
+
+footer p {
+  text-align: center;
+  color: #fff;
 }
 
 * {
