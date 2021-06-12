@@ -68,7 +68,8 @@ header input{
     max-height:0 ;
     padding-left:10% ;
     display: none;
-    animation: slide_right 1.3s ease ;
+    animation:  slide_right 1.3s ease ;
+    -webkit-animation:  slide_right 1.3s ease ;
 }
 
 .slider-custom h1{
@@ -165,9 +166,9 @@ button{
 .dot:hover{
 background: white;
 }
-
-/* slide animation*/
-@keyframes slide_right{
+ 
+ /* slide animation*/
+ @keyframes slide_right{
     0%{
         transform: translateX(100%);
     }
@@ -176,4 +177,6 @@ background: white;
         transform: translateX(0);
     }
 }
+
+
 
