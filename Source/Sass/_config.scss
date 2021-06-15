@@ -1,0 +1,27 @@
+$perfect-black:#231e23;
+$my-red:#DA0000;
+$my-red-black:#7a0000;
+
+@mixin red-btn-body-position {
+    transform: translate(0,-3.5rem)        ;
+    -webkit-transform: translate(0,-3.5rem)        ;
+    -moz-transform: translate(0,-3.5rem)        ;
+    -ms-transform: translate(0,-3.5rem)        ;
+    -o-transform: translate(0,-3.5rem)        ;
+}
+
+@mixin transition-btn {
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+@mixin up-movement {
+    transform: translateY(-5%);
+    -webkit-transform: translateY(-5%);
+    -moz-transform: translateY(-5%);
+    -ms-transform: translateY(-5%);
+    -o-transform: translateY(-5%);
+}
+

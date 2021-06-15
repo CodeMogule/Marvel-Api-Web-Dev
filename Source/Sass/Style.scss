@@ -1,0 +1,26 @@
+/* SETUP */
+@import './home';
+@import './config';
+@import './characters-section';
+@import './comics';
+@import './games-section';
+@import './footer';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-size: 20px;
+    background-color: rgb(218, 216, 216);
+    font-family: lato;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.row{
+    margin: auto;
+    width: 1140px;
+}

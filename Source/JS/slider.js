@@ -4,9 +4,7 @@
      sliderCharacter: document.querySelectorAll('.img-item-container')
  };
  
- 
- 
- function Slider(){
+ export function Slider(){
     this.counter = 1; 
     this.addSlider = function(x){
         this.counter+=x;
@@ -68,18 +66,4 @@
 
     elements.sliderCharacter[this.counter - 1].style.display = 'block';
     elements.sliderCharacter[this.counter - 1].style.display = 'flex';
- }
-
- 
-
- let headerSlider = new Slider()
- headerSlider.sliderWipe(this.counter);
-
- let timer = setInterval(autoSlide,9000)
-function autoSlide (){
-    headerSlider.counter+=1;
-    headerSlider.sliderWipe(headerSlider.counter)
-}
-
-let characterSlider = new Slider();
-characterSlider.sliderWipeCharacters(this.counter)
+ } 

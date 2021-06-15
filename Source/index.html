@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Vendors/CSS/7.1 Grid.css">
+    <link rel="stylesheet" href="./Vendors/CSS/normalize.css">
+    <link rel="stylesheet" href="./Sass/Style.css">
+    <title>HeroLab</title>
+</head>
+<body>
+    <header>
+        <h1>herolab</h1>
+        <div class="row">
+        <ul class="main-lists">
+            <div class="bod-lists">
+                <li><a href="">Games</a></li>
+                <li><a href="">Characters</a></li>
+                <li><a href="">Comics</a></li>
+                <li><a href="">Home</a></li>
+            </div>
+        </ul>
+        </div>
+
+        <input type="search" placeholder="Search">
+        <div class="row">
+        <div class="slider">
+          <div class="slider-custom"  style="display: block;">
+            <img src="./IMAGES/Spider-man Miles(1).png" alt="Spider-Man">
+            <h1>Spider-Man: Miles Morales</h1>
+            <p>Peter befriends Miles after his father's death, introducing him to the non-profit F.E.A.S.T. shelter so he can serve as a volunteer. Miles is unaware of Peter's secret identity as the masked vigilante Spider-Man, whom Miles idolizes. He eventually gains spider-like powers himself, which he reveals to Peter, who in turn reveals being Spider-Man. Under Peter's guidance, Miles attempts to step up as New York City's next superhero.</p>
+            <a href="" class="btn-header">BUY NOW</a>
+          </div>
+
+          <div class="slider-custom">
+            <img src="./IMAGES/iron-man.png" alt="iron-man">
+            <h1>about iron-man</h1>
+            <p>Genius. Billionaire. Philanthropist. Tony Stark's confidence is only matched by his high-flying abilities as the hero called Iron Man.</p>
+            <a href="" class="btn-header">MORE INFO</a>
+          </div>
+
+          <div class="slider-custom">
+            <img src="./IMAGES/captain america.png" alt="captain-america">
+            <h1>captain america comics</h1>
+            <p>Captain America is a superhero appearing in American comic books published by Marvel Comics. Created by cartoonists Joe Simon and Jack Kirby, the character first appeared in Captain America Comics #1 (cover dated March 1941) from Timely Comics, a predecessor of Marvel Comics. Captain America was designed as a patriotic supersoldier who often fought the Axis powers of World War II and was Timely Comics' most popular character during the wartime period.</p>
+            <a href="" class="btn-header">VIEW COMICS</a>
+          </div>
+          
+          </div>
+          </div>
+            <div class="btn-slider">
+            <button href="" class="left" onclick="headerSlider.addSlider(-1)"><i class="fas fa-chevron-left"></i></button>
+            <button href="" class="right" onclick="headerSlider.addSlider(1)"><i class="fas fa-chevron-right"></i></button>
+            </div>
+
+            <div class="navigation-btn">
+              <div class="dot" onclick="headerSlider.currslider(1)"></div>
+              <div class="dot" onclick="headerSlider.currslider(2)"></div>
+              <div class="dot" onclick="headerSlider.currslider(3)"></div>
+            </div>
+    </header>
+
+
+    <section id = "characters">
+        <div class="row">
+        <h1>Characters</h1>
+        <div class="character-btn">
+        <button onclick="characterSlider.addSlideCharacter(1)"><i class="fas fa-chevron-right"></i></button>
+        <button onclick="characterSlider.addSlideCharacter(-1)"><i class="fas fa-chevron-left"></i></button>
+        </div>
+
+        <div class="characters-img-container">
+          <ul class="img-item-container" style="visibility: visible;">
+            <li><img src="./IMAGES/spidey.jpeg" alt="">
+              <a href="">
+                <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 230 46" style="width: 100%;" class="border-design">
+                  <defs>
+                    <style>.cls-1{fill:none;}.cls-2,.outline-1{opacity:0.5;}.cls-3,.outline-2,.cls-5{fill:#fff;}.cls-3{opacity:0.08;}.cls-4,.cls-6{fill-rule:evenodd;}.cls-6{fill:url(#IJ2);}.cls-7{opacity:0.2;} .bg{fill:rgba(0,0,0,0.5)}</style>
+                    <pattern id="IJ2" data-name="IJ2" width="20" height="20" patternTransform="translate(-117 195)" patternUnits="userSpaceOnUse" viewBox="0 0 20 20">
+                      <rect class="cls-1" width="20" height="20"></rect>
+                      <rect class="cls-2" width="20" height="20"></rect>
+                      <rect class="cls-3" width="1" height="20"></rect>
+                      <rect class="cls-3" width="20" height="1"></rect>
+                      <polygon class="cls-3" points="1 20.71 0.29 20 20 0.29 20.71 1 1 20.71"></polygon>
+                      <polygon class="cls-3" points="-19 20.71 -19.71 20 0 0.29 0.71 1 -19 20.71"></polygon>
+                      <polygon class="cls-3" points="1 0.71 0.29 0 20 -19.71 20.71 -19 1 0.71"></polygon>
+                      <polygon class="cls-3" points="-19 0.71 -19.71 0 0 -19.71 0.71 -19 -19 0.71"></polygon>
+                    </pattern>
+                  </defs>
+                  <title>slim-btn-dn-new</title><g id="Layer_2" data-name="Layer 2">
+                    <g id="slim-btn-dn-new">
+                      <g id="BG" class="cls-2">
+                        <polygon class="bg" points="0 0 230 0 184 46 46 46 0 0"></polygon>
+                      </g>
+                      <g id="OUTLINE" class="outline-1">
+                        <path class="outline-2" d="M227.59,1l-44,44H46.41L2.41,1H227.59M230,0H0L46,46H184L230,0Z"></path>
+                      </g>
+                    </g>
+                    </g>
+                    
+                </svg>
+                <h3>Spider-Man</h3>
+              </a>
+            </li>
+            <li><img src="./IMAGES/tony.jpg" alt="">
+              <a href="">
+                <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 230 46" style="width: 100%;" class="border-design">
+                  <defs>
+                    <style>.cls-1{fill:none;}.cls-2,.outline-1{opacity:0.5;}.cls-3,.outline-2,.cls-5{fill:#fff;}.cls-3{opacity:0.08;}.cls-4,.cls-6{fill-rule:evenodd;}.cls-6{fill:url(#IJ2);}.cls-7{opacity:0.2;} .bg{fill:rgba(0,0,0,0.5)}</style>
+                    <pattern id="IJ2" data-name="IJ2" width="20" height="20" patternTransform="translate(-117 195)" patternUnits="userSpaceOnUse" viewBox="0 0 20 20">
+                      <rect class="cls-1" width="20" height="20"></rect>
+                      <rect class="cls-2" width="20" height="20"></rect>
+                      <rect class="cls-3" width="1" height="20"></rect>
+                      <rect class="cls-3" width="20" height="1"></rect>
+                      <polygon class="cls-3" points="1 20.71 0.29 20 20 0.29 20.71 1 1 20.71"></polygon>
+                      <polygon class="cls-3" points="-19 20.71 -19.71 20 0 0.29 0.71 1 -19 20.71"></polygon>
+                      <polygon class="cls-3" points="1 0.71 0.29 0 20 -19.71 20.71 -19 1 0.71"></polygon>
+                      <polygon class="cls-3" points="-19 0.71 -19.71 0 0 -19.71 0.71 -19 -19 0.71"></polygon>
+                    </pattern>
+                  </defs>
+                  <title>slim-btn-dn-new</title><g id="Layer_2" data-name="Layer 2">
+                    <g id="slim-btn-dn-new">
+                      <g id="BG" class="cls-2">
+                        <polygon class="bg" points="0 0 230 0 184 46 46 46 0 0"></polygon>
+                      </g>
+                      <g id="OUTLINE" class="outline-1">
+                        <path class="outline-2" d="M227.59,1l-44,44H46.41L2.41,1H227.59M230,0H0L46,46H184L230,0Z"></path>
+                      </g>
+                    </g>
+                    </g>
+                    
+                </svg>
+                <h3>iron-man</h3>
+              </a>
+            </li>
+
+            <li><img src="./IMAGES/john-branham-ghost-rider-no-eyes.jpg" alt="">
+              <a href="">
+                <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 230 46" style="width: 100%;" class="border-design">
+                  <defs>
+                    <style>.cls-1{fill:none;}.cls-2,.outline-1{opacity:0.5;}.cls-3,.outline-2,.cls-5{fill:#fff;}.cls-3{opacity:0.08;}.cls-4,.cls-6{fill-rule:evenodd;}.cls-6{fill:url(#IJ2);}.cls-7{opacity:0.2;} .bg{fill:rgba(0,0,0,0.5)}</style>
+                    <pattern id="IJ2" data-name="IJ2" width="20" height="20" patternTransform="translate(-117 195)" patternUnits="userSpaceOnUse" viewBox="0 0 20 20">
+                      <rect class="cls-1" width="20" height="20"></rect>
+                      <rect class="cls-2" width="20" height="20"></rect>
+                      <rect class="cls-3" width="1" height="20"></rect>
+                      <rect class="cls-3" width="20" height="1"></rect>
+                      <polygon class="cls-3" points="1 20.71 0.29 20 20 0.29 20.71 1 1 20.71"></polygon>
+                      <polygon class="cls-3" points="-19 20.71 -19.71 20 0 0.29 0.71 1 -19 20.71"></polygon>
+                      <polygon class="cls-3" points="1 0.71 0.29 0 20 -19.71 20.71 -19 1 0.71"></polygon>
+                      <polygon class="cls-3" points="-19 0.71 -19.71 0 0 -19.71 0.71 -19 -19 0.71"></polygon>
+                    </pattern>
+                  </defs>
+                  <title>slim-btn-dn-new</title><g id="Layer_2" data-name="Layer 2">
+                    <g id="slim-btn-dn-new">
+                      <g id="BG" class="cls-2">
+                        <polygon class="bg" points="0 0 230 0 184 46 46 46 0 0"></polygon>
+                      </g>
+                      <g id="OUTLINE" class="outline-1">
+                        <path class="outline-2" d="M227.59,1l-44,44H46.41L2.41,1H227.59M230,0H0L46,46H184L230,0Z"></path>
+                      </g>
+                    </g>
+                    </g>
+                    
+                </svg>
+                <h3>ghost rider</h3>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="img-item-container" style="display: none;">
+            <li><img src="./IMAGES/186055.jpg" alt="">
+              <a href="">
+                <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 230 46" style="width: 100%;" class="border-design">
+                  <defs>
+                    <style>.cls-1{fill:none;}.cls-2,.outline-1{opacity:0.5;}.cls-3,.outline-2,.cls-5{fill:#fff;}.cls-3{opacity:0.08;}.cls-4,.cls-6{fill-rule:evenodd;}.cls-6{fill:url(#IJ2);}.cls-7{opacity:0.2;} .bg{fill:rgba(0,0,0,0.5)}</style>
+                    <pattern id="IJ2" data-name="IJ2" width="20" height="20" patternTransform="translate(-117 195)" patternUnits="userSpaceOnUse" viewBox="0 0 20 20">
+                      <rect class="cls-1" width="20" height="20"></rect>
+                      <rect class="cls-2" width="20" height="20"></rect>
+                      <rect class="cls-3" width="1" height="20"></rect>
+                      <rect class="cls-3" width="20" height="1"></rect>
+                      <polygon class="cls-3" points="1 20.71 0.29 20 20 0.29 20.71 1 1 20.71"></polygon>
+                      <polygon class="cls-3" points="-19 20.71 -19.71 20 0 0.29 0.71 1 -19 20.71"></polygon>
+                      <polygon class="cls-3" points="1 0.71 0.29 0 20 -19.71 20.71 -19 1 0.71"></polygon>
+                      <polygon class="cls-3" points="-19 0.71 -19.71 0 0 -19.71 0.71 -19 -19 0.71"></polygon>
+                    </pattern>
+                  </defs>
+                  <title>slim-btn-dn-new</title><g id="Layer_2" data-name="Layer 2">
+                    <g id="slim-btn-dn-new">
+                      <g id="BG" class="cls-2">
+                        <polygon class="bg" points="0 0 230 0 184 46 46 46 0 0"></polygon>
+                      </g>
+                      <g id="OUTLINE" class="outline-1">
+                        <path class="outline-2" d="M227.59,1l-44,44H46.41L2.41,1H227.59M230,0H0L46,46H184L230,0Z"></path>
+                      </g>
+                    </g>
+                    </g>
+                    
+                </svg>
+                <h3>captain-america</h3>
+              </a>
+            </li>
+
+            <li><img src="./IMAGES/hulk.jpg" alt="">
+              <a href="">
+                <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 230 46" style="width: 100%;" class="border-design">
+                  <defs>
+                    <style>.cls-1{fill:none;}.cls-2,.outline-1{opacity:0.5;}.cls-3,.outline-2,.cls-5{fill:#fff;}.cls-3{opacity:0.08;}.cls-4,.cls-6{fill-rule:evenodd;}.cls-6{fill:url(#IJ2);}.cls-7{opacity:0.2;} .bg{fill:rgba(0,0,0,0.5)}</style>
+                    <pattern id="IJ2" data-name="IJ2" width="20" height="20" patternTransform="translate(-117 195)" patternUnits="userSpaceOnUse" viewBox="0 0 20 20">
+                      <rect class="cls-1" width="20" height="20"></rect>
+                      <rect class="cls-2" width="20" height="20"></rect>
+                      <rect class="cls-3" width="1" height="20"></rect>
+                      <rect class="cls-3" width="20" height="1"></rect>
+                      <polygon class="cls-3" points="1 20.71 0.29 20 20 0.29 20.71 1 1 20.71"></polygon>
+                      <polygon class="cls-3" points="-19 20.71 -19.71 20 0 0.29 0.71 1 -19 20.71"></polygon>
+                      <polygon class="cls-3" points="1 0.71 0.29 0 20 -19.71 20.71 -19 1 0.71"></polygon>
+                      <polygon class="cls-3" points="-19 0.71 -19.71 0 0 -19.71 0.71 -19 -19 0.71"></polygon>
+                    </pattern>
+                  </defs>
+                  <title>slim-btn-dn-new</title><g id="Layer_2" data-name="Layer 2">
+                    <g id="slim-btn-dn-new">
+                      <g id="BG" class="cls-2">
+                        <polygon class="bg" points="0 0 230 0 184 46 46 46 0 0"></polygon>
+                      </g>
+                      <g id="OUTLINE" class="outline-1">
+                        <path class="outline-2" d="M227.59,1l-44,44H46.41L2.41,1H227.59M230,0H0L46,46H184L230,0Z"></path>
+                      </g>
+                    </g>
+                    </g>
+                    
+                </svg>
+                <h3>Hulk</h3>
+              </a>
+            </li>
+
+            <li><img src="./IMAGES/deadpool.jpg" alt="">
+              <a href="">
+                <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 230 46" style="width: 100%;" class="border-design">
+                  <defs>
+                    <style>.cls-1{fill:none;}.cls-2,.outline-1{opacity:0.5;}.cls-3,.outline-2,.cls-5{fill:#fff;}.cls-3{opacity:0.08;}.cls-4,.cls-6{fill-rule:evenodd;}.cls-6{fill:url(#IJ2);}.cls-7{opacity:0.2;} .bg{fill:rgba(0,0,0,0.5)}</style>
+                    <pattern id="IJ2" data-name="IJ2" width="20" height="20" patternTransform="translate(-117 195)" patternUnits="userSpaceOnUse" viewBox="0 0 20 20">
+                      <rect class="cls-1" width="20" height="20"></rect>
+                      <rect class="cls-2" width="20" height="20"></rect>
+                      <rect class="cls-3" width="1" height="20"></rect>
+                      <rect class="cls-3" width="20" height="1"></rect>
+                      <polygon class="cls-3" points="1 20.71 0.29 20 20 0.29 20.71 1 1 20.71"></polygon>
+                      <polygon class="cls-3" points="-19 20.71 -19.71 20 0 0.29 0.71 1 -19 20.71"></polygon>
+                      <polygon class="cls-3" points="1 0.71 0.29 0 20 -19.71 20.71 -19 1 0.71"></polygon>
+                      <polygon class="cls-3" points="-19 0.71 -19.71 0 0 -19.71 0.71 -19 -19 0.71"></polygon>
+                    </pattern>
+                  </defs>
+                  <title>slim-btn-dn-new</title><g id="Layer_2" data-name="Layer 2">
+                    <g id="slim-btn-dn-new">
+                      <g id="BG" class="cls-2">
+                        <polygon class="bg" points="0 0 230 0 184 46 46 46 0 0"></polygon>
+                      </g>
+                      <g id="OUTLINE" class="outline-1">
+                        <path class="outline-2" d="M227.59,1l-44,44H46.41L2.41,1H227.59M230,0H0L46,46H184L230,0Z"></path>
+                      </g>
+                    </g>
+                    </g>
+                    
+                </svg>
+                <h3>Deadpool</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+        </div>
+    </section>
+
+    <section id="comics">
+      <div class="row">
+        <h1>new releases comics</h1>
+
+        <div class="comic-btn">
+        <a href="">
+          SEE ALL
+        </a>
+        </div>
+        <div class="col span_1_of_4 box">
+            <img src="./IMAGES/mob.jpg" alt="">
+            <h3>Morbius: Bond Of Blood (2021)</h3>
+            <p>creator</p>
+            <div class="rating">
+              <ul>
+                <li><i class="fas fa-star"></i></li>
+                <li>5.0</li>
+              </ul>
+              </div>
+          </div>
+          <div class="col span_1_of_4 box">
+            <img src="./IMAGES/spidey comic.jpg" alt="">
+            <h3> The Amazing Spider-Man</h3>
+            <p>creator</p>
+            <div class="rating">
+              <ul>
+                <li><i class="fas fa-star"></i></li>
+                <li>5.0</li>
+              </ul>
+              </div>
+          </div>
+          <div class="col span_1_of_4 box">
+            <img src="./IMAGES/hulk comisc.jpg" alt="">
+            <h3>Immortal Hulk: Time of Monsters</h3>
+            <p>creator</p>
+            <div class="rating">
+            <ul>
+              <li><i class="fas fa-star"></i></li>
+              <li>5.0</li>
+            </ul>
+            </div>
+          </div>
+          <div class="col span_1_of_4 box">
+            <img src="./IMAGES/cap comics.jpg" alt="">
+            <h3>Captain America (2018)</h3>
+            <p>creator</p>
+            <div class="rating">
+              <ul>
+                <li><i class="fas fa-star"></i></li>
+                <li>5.0</li>
+              </ul>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <section id="marvel-games">
+      <div class="row">
+        <h1>Best Marvel Games</h1>
+      <div class="col span-1-of-3 box-game">
+        <img src="./IMAGES/miles ps4 game.jpg" alt="">
+        <h3>Spider-Man: Miles Morales</h3>
+        <p>2020</p>
+        </div>
+
+        <div class="col span-1-of-3 box-game">
+          <img src="./IMAGES/peter ps4 game.jpg" alt="">
+          <h3>Marvel's Spider-Man</h3>
+          <p>2018</p>
+          </div>
+
+          <div class="col span-1-of-3 box-game">
+            <img src="./IMAGES/marvel avenger.jpg" alt="">
+            <h3>Marvel's avenger</h3>
+            <p>2020</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+      <div class="text-footer">
+      <h5>Made by TheAzizMoh</h5>
+      <p>Powered by @marvel</p>
+      </div>
+    </footer>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+     <script src="https://kit.fontawesome.com/fc8b51f2eb.js" crossorigin="anonymous"></script>
+     <script type="text/javascript" defer src="./JS/bundle.js"></script>
+</body>
+</html>
