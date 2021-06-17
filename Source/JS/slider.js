@@ -1,9 +1,5 @@
- const elements = {
-     slider: document.querySelectorAll('.slider-custom'),
-     dots: document.querySelectorAll('.dot'),
-     sliderCharacter: document.querySelectorAll('.img-item-container')
- };
- 
+ import { elements } from "./elements";
+
  export function Slider(){
     this.counter = 1; 
     this.addSlider = function(x){
@@ -47,7 +43,9 @@
  }
 
 
+
  
+ /*
  Slider.prototype.sliderWipeCharacters = function(x){
      let i;
      //characters section
@@ -67,3 +65,4 @@
     elements.sliderCharacter[this.counter - 1].style.display = 'block';
     elements.sliderCharacter[this.counter - 1].style.display = 'flex';
  } 
+ */

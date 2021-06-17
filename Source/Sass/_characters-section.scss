@@ -44,13 +44,14 @@
         list-style: none;
         animation:  slide_right 1.3s ease ;
     -webkit-animation:  slide_right 1.3s ease ;
+    overflow:hidden;
 
 
         li{
             width: 50%;
             height: auto;
             position: relative;
-            margin-right: -15%;
+            margin-right: 10%;
             transition: 0.5s;
             -webkit-transition: 0.5s;
             -moz-transition: 0.5s;
@@ -60,11 +61,6 @@
             &:hover{
                @include up-movement;
 }
-
-            
-
-                
-
                 a{
                     text-decoration: none;
                     display: inline-block;
@@ -90,7 +86,7 @@
                 
 
                 h3{
-                font-size: 120%;
+                font-size: 90%;
                 text-align: center;
                 color: #fff;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -105,8 +101,8 @@
             
 
             img{
-                width: 300px;
-                height: 350px;
+                width: 200px;
+                height: 250px;
                 cursor: pointer;
                 border-radius: 10px;
                 -webkit-border-radius: 10px;
@@ -128,11 +124,11 @@
 
 @keyframes slide_right{
     0%{
-        transform: translateX(50%);
-        -webkit-transform: translateX(50%);
-        -moz-transform: translateX(50%);
-        -ms-transform: translateX(50%);
-        -o-transform: translateX(50%);
+        transform: translateY(50%);
+        -webkit-transform: translateY(50%);
+        -moz-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+        -o-transform: translateY(50%);
 }
 
     100%{

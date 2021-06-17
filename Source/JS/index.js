@@ -1,7 +1,9 @@
 import { Slider } from "./slider";
-import axios from "axios";
+import * as character from './Characters';
+import { elements } from "./elements";
 
-let counter = 1
+
+let counter = 1;
 
 window.headerSlider = new Slider()
 headerSlider.sliderWipe(counter);
@@ -13,18 +15,39 @@ function autoSlide (){
 }
 
 window.characterSlider = new Slider();
- characterSlider.sliderWipeCharacters(counter)
+ //characterSlider.sliderWipeCharacters(counter)
 
- 
+  let get = new character.Characters;
 
-//test
- async function getCharacters(){
-     try{
-     const getRes = await axios(`https://gateway.marvel.com/v1/public/characters?ts=1&apikey=adfbe33f945bd7bbefc6420a1fe57e84&hash=36d9c6c7b4db64ac4ca23f0fa90cdb40`)
-     console.log(getRes)
-     }
-     catch(error){
-         alert(error)
+  let scrollCounter = 0;
+
+  
+window.scrollRight = function(){
+     if(scrollCounter <= elements.heroes.scrollWidth - elements.heroes.clientWidth){
+        elements.heroes.scrollTo({
+            top:0,
+            left:(scrollCounter+=scrollPer),
+            behavior: 'smooth'
+        })
      }
  }
-getCharacters()
+
+ window.scrollLeftz = function(){
+    console.log(111)
+   elements.heroes.scrollTo({
+       top:0,
+       left:(scrollCounter-=scrollPer),
+       behavior: 'smooth'
+   })
+   if(scrollCounter < 0){
+       scrollCounter = 0
+   }
+}
+
+
+ let scrollPer = 400;
+
+
+  get.getCharacters()
+  get.add()
+ 
