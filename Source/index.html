@@ -12,19 +12,21 @@
 </head>
 <body>
     <header>
+      <div class="background-header">
         <h1>herolab</h1>
         <div class="row">
         <ul class="main-lists">
             <div class="bod-lists">
-                <li><a href="">Games</a></li>
+                <li><a href="./games.html">Games</a></li>
                 <li><a href="">Characters</a></li>
                 <li><a href="">Comics</a></li>
                 <li><a href="">Home</a></li>
             </div>
         </ul>
-        </div>
-
         <input type="search" placeholder="Search">
+        </div>
+      </div>
+
         <div class="row">
         <div class="slider">
           <div class="slider-custom"  style="display: block;">
@@ -67,12 +69,13 @@
         <div class="row">
         <h1>Characters</h1>
         <div class="character-btn">
-        <button onclick="characterSlider.addSlideCharacter(1)"><i class="fas fa-chevron-right"></i></button>
-        <button onclick="characterSlider.addSlideCharacter(-1)"><i class="fas fa-chevron-left"></i></button>
+        <button onclick="scrollRight()"><i class="fas fa-chevron-right"></i></button>
+        <button onclick="scrollLeftz()"><i class="fas fa-chevron-left"></i></button>
         </div>
 
         <div class="characters-img-container">
           <ul class="img-item-container" style="visibility: visible;">
+            <!--
             <li><img src="./IMAGES/spidey.jpeg" alt="">
               <a href="">
                 <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 230 46" style="width: 100%;" class="border-design">
@@ -104,6 +107,8 @@
                 <h3>Spider-Man</h3>
               </a>
             </li>
+          
+          
             <li><img src="./IMAGES/tony.jpg" alt="">
               <a href="">
                 <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 230 46" style="width: 100%;" class="border-design">
@@ -135,7 +140,9 @@
                 <h3>iron-man</h3>
               </a>
             </li>
+          
 
+          
             <li><img src="./IMAGES/john-branham-ghost-rider-no-eyes.jpg" alt="">
               <a href="">
                 <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 230 46" style="width: 100%;" class="border-design">
@@ -167,9 +174,11 @@
                 <h3>ghost rider</h3>
               </a>
             </li>
+          -->
           </ul>
 
           <ul class="img-item-container" style="display: none;">
+            <!--
             <li><img src="./IMAGES/186055.jpg" alt="">
               <a href="">
                 <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 230 46" style="width: 100%;" class="border-design">
@@ -201,6 +210,7 @@
                 <h3>captain-america</h3>
               </a>
             </li>
+         
 
             <li><img src="./IMAGES/hulk.jpg" alt="">
               <a href="">
@@ -233,7 +243,7 @@
                 <h3>Hulk</h3>
               </a>
             </li>
-
+         
             <li><img src="./IMAGES/deadpool.jpg" alt="">
               <a href="">
                 <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 230 46" style="width: 100%;" class="border-design">
@@ -265,6 +275,7 @@
                 <h3>Deadpool</h3>
               </a>
             </li>
+          -->
           </ul>
         </div>
         </div>
@@ -346,7 +357,7 @@
             <h3>Marvel's avenger</h3>
             <p>2020</p>
             </div>
-        </div>
+          </div>
     </section>
 
     <footer>

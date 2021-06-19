@@ -1,0 +1,24 @@
+@import '../config';
+
+@include logo-style;
+.background-header{
+    background-color: $perfect-black;
+    height: 20vh;
+    margin: -30px;
+}
+@include main-list;
+@include main-items;
+@include main-items-links;
+
+header input{
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 90%;
+    padding: 10px;
+    transform: translate(50rem,-135px);
+    width: 20% !important;
+    -webkit-transform: translate(50rem,-135px);
+    -moz-transform: translate(50rem,-135px);
+    -ms-transform: translate(50rem,-135px);
+    -o-transform: translate(50rem,-135px);
+}

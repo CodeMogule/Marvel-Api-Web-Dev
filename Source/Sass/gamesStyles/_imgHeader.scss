@@ -1,0 +1,21 @@
+.img-header{
+    transform: translateY(30px);
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    height: 500px;
+    width: 100%;
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -o-transform: translateY(30px);
+     h3{
+         font-size: 400%;
+         color: #fff;
+         text-align: right;
+         transform: translate(-30px,150px);
+         -webkit-transform: translate(-30px,150px);
+         -moz-transform: translate(-30px,150px);
+         -ms-transform: translate(-30px,150px);
+         -o-transform: translate(-30px,150px);
+}
+}

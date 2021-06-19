@@ -1,0 +1,47 @@
+/* Navigation*/
+#games {
+  padding-top: 50px;
+}
+
+#games h1 {
+  color: #231e23;
+  font-family: warden typeface;
+  padding-top: 50px;
+  text-transform: lowercase;
+}
+
+#games .game-box {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+#games .game-box:hover {
+  transform: translateY(-5%);
+  -webkit-transform: translateY(-5%);
+  -moz-transform: translateY(-5%);
+  -ms-transform: translateY(-5%);
+  -o-transform: translateY(-5%);
+}
+
+#games .game-box img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+#games .game-box h3 {
+  font-size: 80%;
+}
+
+#games .game-box p {
+  font-size: 60%;
+}
+/*# sourceMappingURL=games-img-box.css.map */

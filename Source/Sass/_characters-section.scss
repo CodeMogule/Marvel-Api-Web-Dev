@@ -89,6 +89,7 @@
                 font-size: 90%;
                 text-align: center;
                 color: #fff;
+                white-space: nowrap;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 text-transform: uppercase;
                 transform:translateY(-150%) ;
@@ -122,18 +123,6 @@
     }
 }
 
-@keyframes slide_right{
-    0%{
-        transform: translateY(50%);
-        -webkit-transform: translateY(50%);
-        -moz-transform: translateY(50%);
-        -ms-transform: translateY(50%);
-        -o-transform: translateY(50%);
-}
 
-    100%{
-        transform: translateX(0);
-    }
-}
 
 }

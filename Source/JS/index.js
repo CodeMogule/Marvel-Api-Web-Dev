@@ -49,5 +49,5 @@ window.scrollRight = function(){
 
 
   get.getCharacters()
-  get.add()
+  
  
