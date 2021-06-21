@@ -85,11 +85,11 @@ header input {
   font-size: 400%;
   color: #fff;
   text-align: right;
-  transform: translate(-30px, 150px);
-  -webkit-transform: translate(-30px, 150px);
-  -moz-transform: translate(-30px, 150px);
-  -ms-transform: translate(-30px, 150px);
-  -o-transform: translate(-30px, 150px);
+  transform: translate(15px, 160px);
+  -webkit-transform: translate(15px, 160px);
+  -moz-transform: translate(15px, 160px);
+  -ms-transform: translate(15px, 160px);
+  -o-transform: translate(15px, 160px);
 }
 
 /* Navigation*/

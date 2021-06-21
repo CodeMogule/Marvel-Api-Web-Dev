@@ -5,6 +5,7 @@ import { elements } from "./elements";
 
 let counter = 1;
 
+try{
 window.headerSlider = new Slider()
 headerSlider.sliderWipe(counter);
 
@@ -16,6 +17,11 @@ function autoSlide (){
 
 window.characterSlider = new Slider();
  //characterSlider.sliderWipeCharacters(counter)
+} catch(error){
+    console.log(`error`)
+}
+
+
 
   let get = new character.Characters;
 
@@ -45,9 +51,11 @@ window.scrollRight = function(){
 }
 
 
+
  let scrollPer = 400;
 
 
   get.getCharacters()
+
   
  

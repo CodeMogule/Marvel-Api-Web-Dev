@@ -1,0 +1,96 @@
+
+.character{
+    padding-top: 50px;
+    padding-left: 50px;
+    .character-lists{
+        position: relative;
+        overflow: hidden;
+
+        .spinner{
+            font-size: 500%;
+            color: $my-red;
+            text-align: center;
+            animation: rotation 0.5 ease;
+            -webkit-animation: rotation 1.0s infinite linear;
+            margin-top: 100px;
+            margin-left: 45%;
+            margin-bottom: 100px;
+}
+
+        @keyframes rotation {
+            0%{
+                transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+}
+            100%{
+                transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+}
+        }
+
+
+
+
+        img{
+            width: 300px;
+            height: 350px;
+            cursor: pointer;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+            -o-transition: 0.5s;
+            &:hover{
+                border: 5px solid $my-red;
+            }       
+    }
+
+    a{
+        text-decoration: none;
+        display: inline-block;
+        position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 65px;
+
+        .border-design{
+
+            #BG{
+                opacity: 0.9;
+            }
+
+            .bg{
+                fill:$my-red;                            
+            }
+
+            .outline-2{
+                fill: transparent;
+            }
+        }
+    h3{
+    font-size: 100%;
+    text-align: center;
+    color: #fff;
+    white-space: nowrap;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    transform:translateY(-200%) ;
+    -webkit-transform:translateY(-200%) ;
+    -moz-transform:translateY(-200%) ;
+    -ms-transform:translateY(-200%) ;
+    -o-transform:translateY(-200%) ;
+}
+    }
+    }
+}

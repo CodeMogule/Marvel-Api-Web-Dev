@@ -1,0 +1,226 @@
+/* I imported this nav file from gamesStyles folder because it's just the same thing*/
+/* Navigation*/
+header h1 {
+  font-family: warden typeface;
+  color: #DA0000;
+  padding: 60px;
+}
+
+.background-header {
+  background-color: #231e23;
+  height: 20vh;
+  margin: -30px;
+}
+
+.main-lists {
+  list-style: none;
+  transform: translate(-160px, -140px);
+  -webkit-transform: translate(-160px, -140px);
+  -moz-transform: translate(-160px, -140px);
+  -ms-transform: translate(-160px, -140px);
+  -o-transform: translate(-160px, -140px);
+}
+
+.main-lists li {
+  display: inline-block;
+  font-size: 130%;
+  margin: 10px;
+  float: right;
+}
+
+.main-lists li a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.main-lists li a:hover {
+  color: #DA0000;
+  opacity: 1;
+}
+
+.main-lists li a:hover::after {
+  opacity: 1;
+}
+
+.main-lists li a::after {
+  content: "";
+  display: block;
+  width: 75%;
+  margin: auto;
+  border-bottom: 2px solid white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0;
+  position: relative;
+  top: 6px;
+}
+
+header input {
+  border: 2px solid white;
+  border-radius: 6px;
+  font-size: 90%;
+  padding: 10px;
+  transform: translate(50rem, -135px);
+  width: 20% !important;
+  -webkit-transform: translate(50rem, -135px);
+  -moz-transform: translate(50rem, -135px);
+  -ms-transform: translate(50rem, -135px);
+  -o-transform: translate(50rem, -135px);
+}
+
+/* i'm doing the same thing agian (:*/
+.img-header {
+  transform: translateY(30px);
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  height: 500px;
+  width: 100%;
+  -webkit-transform: translateY(30px);
+  -moz-transform: translateY(30px);
+  -ms-transform: translateY(30px);
+  -o-transform: translateY(30px);
+}
+
+.img-header h3 {
+  font-size: 400%;
+  color: #fff;
+  text-align: right;
+  transform: translate(15px, 160px);
+  -webkit-transform: translate(15px, 160px);
+  -moz-transform: translate(15px, 160px);
+  -ms-transform: translate(15px, 160px);
+  -o-transform: translate(15px, 160px);
+}
+
+.character {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.character .character-lists {
+  position: relative;
+  overflow: hidden;
+}
+
+.character .character-lists .spinner {
+  font-size: 500%;
+  color: #DA0000;
+  text-align: center;
+  animation: rotation 0.5 ease;
+  -webkit-animation: rotation 1.0s infinite linear;
+  margin-top: 100px;
+  margin-left: 45%;
+  margin-bottom: 100px;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+
+.character .character-lists img {
+  width: 300px;
+  height: 350px;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.character .character-lists img:hover {
+  border: 5px solid #DA0000;
+}
+
+.character .character-lists a {
+  text-decoration: none;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 65px;
+}
+
+.character .character-lists a .border-design #BG {
+  opacity: 0.9;
+}
+
+.character .character-lists a .border-design .bg {
+  fill: #DA0000;
+}
+
+.character .character-lists a .border-design .outline-2 {
+  fill: transparent;
+}
+
+.character .character-lists a h3 {
+  font-size: 100%;
+  text-align: center;
+  color: #fff;
+  white-space: nowrap;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
+  transform: translateY(-200%);
+  -webkit-transform: translateY(-200%);
+  -moz-transform: translateY(-200%);
+  -ms-transform: translateY(-200%);
+  -o-transform: translateY(-200%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  font-size: 20px;
+  background-color: #dad8d8;
+  font-family: lato;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+.row {
+  margin: auto;
+  width: 1140px;
+}
+/*# sourceMappingURL=characters.css.map */

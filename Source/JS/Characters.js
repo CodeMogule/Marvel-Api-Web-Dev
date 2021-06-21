@@ -1,6 +1,7 @@
 import axios from "axios";
 import { elements } from "./elements";
 
+
 export class Characters{
     constructor(){
      
@@ -10,8 +11,8 @@ export class Characters{
 
     async getCharacters(){
         try{
-        const getRes = await axios(`https://gateway.marvel.com/v1/public/characters?ts=1&apikey=adfbe33f945bd7bbefc6420a1fe57e84&hash=36d9c6c7b4db64ac4ca23f0fa90cdb40`)
-        this.dataResult = getRes.data.data.results
+        this.getRes = await axios(`https://gateway.marvel.com/v1/public/characters?ts=1&apikey=adfbe33f945bd7bbefc6420a1fe57e84&hash=36d9c6c7b4db64ac4ca23f0fa90cdb40`)
+        this.dataResult = this.getRes.data.data.results
         this.dataResult.slice(0,10).forEach((cur)=>{
           const u = `/portrait_fantastic.`;
           let markup  = `
@@ -49,12 +50,19 @@ export class Characters{
           `
           elements.heroes.insertAdjacentHTML('beforeend',markup)
         })
+        
+        this.dataResult.slice(0,16).forEach((items)=>{
+          console.log(items)
+        })
         }
         catch(error){
-            alert(error)
+            console.log(`error`)
         }
       }
-}
+    
+
+    }
+
 
 
 
