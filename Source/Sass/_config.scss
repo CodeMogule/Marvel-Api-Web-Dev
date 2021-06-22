@@ -97,3 +97,37 @@ $my-red-black:#7a0000;
 }
 
  }
+
+
+ @mixin spinner {
+    .spinner{
+        font-size: 500%;
+        color: $my-red;
+        text-align: center;
+        animation: rotation 0.5 ease;
+        -webkit-animation: rotation 1.0s infinite linear;
+        margin-top: 100px;
+        margin-left: 45%;
+        margin-bottom: 100px;
+}
+}
+
+@mixin rotation {
+    @keyframes rotation {
+        0%{
+            transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+}
+        100%{
+            transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+}
+    }
+
+}

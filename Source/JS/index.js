@@ -1,6 +1,7 @@
 import { Slider } from "./slider";
 import * as character from './Characters';
 import { elements } from "./elements";
+import * as loaders from './loader';
 
 
 let counter = 1;
@@ -54,8 +55,19 @@ window.scrollRight = function(){
 
  let scrollPer = 400;
 
+ const getcharacters = async ()=> {
+//spinner
+loaders.loader()
+//display characters both for the home and the characters page
+get.getCharacters()
+await get.displayHeroes()
+//clear Loader
+loaders.removeLoader()
+ }
 
-  get.getCharacters()
+ getcharacters()
+
+
 
   
  

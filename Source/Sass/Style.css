@@ -304,10 +304,14 @@ button {
 #characters .img-item-container li a {
   text-decoration: none;
   display: inline-block;
+  height: 33vh;
+  position: relative;
+}
+
+#characters .img-item-container li a .border-design {
   position: absolute;
-  bottom: 0;
   left: 0;
-  height: 65px;
+  bottom: 0;
 }
 
 #characters .img-item-container li a .border-design #BG {
@@ -436,7 +440,7 @@ button {
 
 #comics .box .rating ul li i {
   font-size: 80%;
-  color: #e5d549;
+  color: #F5A962;
 }
 
 #comics .box .rating ul li:last-child {

@@ -1,0 +1,89 @@
+@import '../config';
+
+.comics{
+    padding-top:30px ;
+    padding-left: 30px;
+
+    .comics-container{
+        h1{
+            font-family: 'Big Shoulders Stencil Display', cursive;
+            letter-spacing: 1px;
+           }
+    }
+
+    
+    .comics-feature{
+       
+        display: flex;
+        .comics-display{
+            position: relative;
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+            -o-transition: 0.5s;
+        
+            &:hover{
+                @include up-movement
+            }
+            
+            img{
+                width: 50%;
+        height: 50vh;
+        cursor: pointer;
+        border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+            }
+        }
+        .comic-title{
+           position: absolute;
+           top: 5%;
+           left: 60%;
+
+           p{
+            font-size: 60%;
+            font-weight: bold;
+        }
+
+        h1{
+            font-size: 280%;
+        }
+
+        .rating{
+            padding-top: 10px;
+            ul{
+             position: relative;
+             bottom: 20px;
+            li{
+                list-style: none;
+                display: inline-block;
+                position: absolute;
+                left: 0;
+                top: 0;
+        
+                i{
+                    font-size: 80%;
+                    color: #F5A962;
+                }
+            }
+        
+            li:last-child{
+                left: 13%;
+                font-size: 80%;
+                transform: translate(0,13%);
+                -webkit-transform: translate(0,13%);
+                -moz-transform: translate(0,13%);
+                -ms-transform: translate(0,13%);
+                -o-transform: translate(0,13%);
+                font-weight: bold;
+        }
+        }
+            }
+        }
+
+        
+    }
+}

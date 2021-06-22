@@ -64,13 +64,13 @@
                 a{
                     text-decoration: none;
                     display: inline-block;
-                    position: absolute;
-                bottom: 0;
-                left: 0;
-                height: 65px;
+                height: 33vh;
+                position: relative;
 
                     .border-design{
-
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
                         #BG{
                             opacity: 0.9;
                         }

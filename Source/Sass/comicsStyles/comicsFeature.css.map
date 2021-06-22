@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,CAAA;EACH,WAAW,EAAC,IAAK;CAkBpB;;AAnBD,AAOY,OAPL,CAIH,eAAe,CAEX,eAAe,CACX,GAAG,CAAA;EACC,KAAK,EAAE,IAAI;EACnB,MAAM,EAAE,IAAI;EACZ,MAAM,EAAE,OAAO;EACf,aAAa,EAAE,GAAG;EACvB,qBAAqB,EAAE,GAAG;EAC1B,kBAAkB,EAAE,GAAG;EACvB,iBAAiB,EAAE,GAAG;EACtB,gBAAgB,EAAE,GAAG;CACX",
+    "sources": [
+        "comicsFeature.scss"
+    ],
+    "names": [],
+    "file": "comicsFeature.css"
+}

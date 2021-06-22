@@ -94,6 +94,7 @@ header input {
   -o-transform: translate(15px, 160px);
 }
 
+/* Navigation*/
 .character {
   padding-top: 50px;
   padding-left: 50px;
@@ -102,6 +103,7 @@ header input {
 .character .character-lists {
   position: relative;
   overflow: hidden;
+  padding-left: 50px;
 }
 
 .character .character-lists .spinner {
@@ -172,10 +174,15 @@ header input {
 .character .character-lists a {
   text-decoration: none;
   display: inline-block;
+  margin: 10px;
+  height: 46vh;
+  position: relative;
+}
+
+.character .character-lists a .border-design {
   position: absolute;
-  bottom: 0;
   left: 0;
-  height: 65px;
+  bottom: 0;
 }
 
 .character .character-lists a .border-design #BG {

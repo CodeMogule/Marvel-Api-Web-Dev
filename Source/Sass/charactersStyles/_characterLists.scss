@@ -1,3 +1,4 @@
+@import '../config';
 
 .character{
     padding-top: 50px;
@@ -5,37 +6,10 @@
     .character-lists{
         position: relative;
         overflow: hidden;
-
-        .spinner{
-            font-size: 500%;
-            color: $my-red;
-            text-align: center;
-            animation: rotation 0.5 ease;
-            -webkit-animation: rotation 1.0s infinite linear;
-            margin-top: 100px;
-            margin-left: 45%;
-            margin-bottom: 100px;
-}
-
-        @keyframes rotation {
-            0%{
-                transform: rotate(0deg);
-                -webkit-transform: rotate(0deg);
-                -moz-transform: rotate(0deg);
-                -ms-transform: rotate(0deg);
-                -o-transform: rotate(0deg);
-}
-            100%{
-                transform: rotate(360deg);
-                -webkit-transform: rotate(360deg);
-                -moz-transform: rotate(360deg);
-                -ms-transform: rotate(360deg);
-                -o-transform: rotate(360deg);
-}
-        }
-
-
-
+        padding-left: 50px;
+        
+        @include spinner;
+        @include rotation;
 
         img{
             width: 300px;
@@ -59,13 +33,15 @@
     a{
         text-decoration: none;
         display: inline-block;
-        position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 65px;
+       margin: 10px;
+        height: 46vh;
+        position: relative;
+       
 
         .border-design{
-
+            position: absolute;
+            left: 0;
+            bottom: 0;
             #BG{
                 opacity: 0.9;
             }
