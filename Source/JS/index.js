@@ -2,6 +2,7 @@ import { Slider } from "./slider";
 import * as character from './Characters';
 import { elements } from "./elements";
 import * as loaders from './loader';
+import * as comics from './comics'
 
 
 let counter = 1;
@@ -55,7 +56,7 @@ window.scrollRight = function(){
 
  let scrollPer = 400;
 
- const getcharacters = async ()=> {
+ const  characterResult = async () => {
 //spinner
 loaders.loader()
 //display characters both for the home and the characters page
@@ -65,7 +66,15 @@ await get.displayHeroes()
 loaders.removeLoader()
  }
 
- getcharacters()
+ const ComicsResult = async () => {
+     //display Comics
+     await comics.getComics()
+     //Just Random rating number using Math.random(), because they don't provide the ratingNumber on their Api
+     comics.ratingNum()
+ }
+ characterResult()
+ ComicsResult()
+
 
 
 
