@@ -14,9 +14,10 @@ export class Characters{
         this.dataResult = this.getRes.data.data.results
         const u = `/portrait_fantastic.`
         this.dataResult.slice(0,10).forEach((cur)=>{
+          console.log(cur)
           let markup  = `
           <li>
-          <a href="">
+          <a onclick="getCharacterId(${cur.id})">
          <img src="${cur.thumbnail.path}${u}${cur.thumbnail.extension}" alt="">
              <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 230 46" style="width: 100%;" class="border-design">
                <defs>

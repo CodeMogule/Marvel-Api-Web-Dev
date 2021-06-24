@@ -8,30 +8,24 @@ export async function getComics(){
     const url = `/portrait_fantastic.`
     comicData.forEach((comics) => { 
 
-        console.log(comics)
-
+        //creators names
         const p = comics.creators.items.slice(0,1).map((names)=>{
             return `<p>${names.name}</p>`
         }).join("")
 
-    
+        //prices
+        const prices = comics.prices.map((cost) => {
+            return `<p>$${cost.price}</p>`
+        }).join("")
+
         let comicMarkup = `
         <li>
                         <a href="">
                             <img src="${comics.thumbnail.path}${url}${comics.thumbnail.extension}" alt="">
                         </a>
                             <h3> ${comics.title} </h3>
-
                            ${p}
-                      
-
-            <div class="rating">
-              <ul>
-                <li><i class="fas fa-star"></i></li>
-                <li class="rating-num">5.0</li>
-              </ul>
-              </div>
-                    </li>
+                           ${prices}
                 </ul>
         `
         elements.comicsTrending.insertAdjacentHTML('afterbegin',comicMarkup);
@@ -39,15 +33,4 @@ export async function getComics(){
 } catch(error){
 
 }
-}
-
-
-export function ratingNum(min = 1,max = 10){
-let randomNum = Math.random() * (max-min) + min;
-let test = elements.ratingNumber;
-
-for(let i = 0; i<test.length;i++){
-    console.log(test[i].textContent = randomNum)
-}
-
 }

@@ -51,37 +51,6 @@
         h1{
             font-size: 280%;
         }
-
-        .rating{
-            padding-top: 10px;
-            ul{
-             position: relative;
-             bottom: 20px;
-            li{
-                list-style: none;
-                display: inline-block;
-                position: absolute;
-                left: 0;
-                top: 0;
-        
-                i{
-                    font-size: 80%;
-                    color: #F5A962;
-                }
-            }
-        
-            li:last-child{
-                left: 13%;
-                font-size: 80%;
-                transform: translate(0,13%);
-                -webkit-transform: translate(0,13%);
-                -moz-transform: translate(0,13%);
-                -ms-transform: translate(0,13%);
-                -o-transform: translate(0,13%);
-                font-weight: bold;
-        }
-        }
-            }
         }
 
         

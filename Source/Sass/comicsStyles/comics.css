@@ -152,40 +152,43 @@ header input {
   font-size: 280%;
 }
 
-.comics .comics-feature .comic-title .rating {
-  padding-top: 10px;
-}
-
-.comics .comics-feature .comic-title .rating ul {
-  position: relative;
-  bottom: 20px;
-}
-
-.comics .comics-feature .comic-title .rating ul li {
-  list-style: none;
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-.comics .comics-feature .comic-title .rating ul li i {
-  font-size: 80%;
-  color: #F5A962;
-}
-
-.comics .comics-feature .comic-title .rating ul li:last-child {
-  left: 13%;
-  font-size: 80%;
-  transform: translate(0, 13%);
-  -webkit-transform: translate(0, 13%);
-  -moz-transform: translate(0, 13%);
-  -ms-transform: translate(0, 13%);
-  -o-transform: translate(0, 13%);
-  font-weight: bold;
-}
-
 /* Navigation*/
+.character-btn button {
+  float: right;
+  padding: 5px;
+  transition: 0.5s;
+  transform: translate(0, -3.5rem);
+  -webkit-transform: translate(0, -3.5rem);
+  -moz-transform: translate(0, -3.5rem);
+  -ms-transform: translate(0, -3.5rem);
+  -o-transform: translate(0, -3.5rem);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  border: transparent;
+  background: transparent;
+  position: relative;
+  right: 30px;
+}
+
+.character-btn i {
+  color: #fff;
+  background-color: #DA0000;
+  border: 2px solid #DA0000;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  padding: 10px;
+}
+
+.character-btn i:hover {
+  background-color: #7a0000;
+  border: transparent;
+}
+
 .comics-trending {
   list-style: none;
   display: -webkit-box;
@@ -193,6 +196,9 @@ header input {
   display: flex;
   position: relative;
   right: 30px;
+  bottom: 80px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .comics-trending .spinner {
@@ -280,40 +286,6 @@ header input {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
-}
-
-.comics-trending .rating {
-  transform: translateX(-30px);
-  -webkit-transform: translateX(-30px);
-  -moz-transform: translateX(-30px);
-  -ms-transform: translateX(-30px);
-  -o-transform: translateX(-30px);
-}
-
-.comics-trending .rating ul {
-  position: relative;
-  bottom: 20px;
-}
-
-.comics-trending .rating ul li {
-  list-style: none;
-  display: inline-block;
-}
-
-.comics-trending .rating ul li i {
-  font-size: 80%;
-  color: #F5A962;
-}
-
-.comics-trending .rating ul li:last-child {
-  position: relative;
-  right: 60px;
-  font-size: 80%;
-  transform: translate(0, 13%);
-  -webkit-transform: translate(0, 13%);
-  -moz-transform: translate(0, 13%);
-  -ms-transform: translate(0, 13%);
-  -o-transform: translate(0, 13%);
 }
 
 * {

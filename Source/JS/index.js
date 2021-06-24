@@ -31,22 +31,49 @@ window.characterSlider = new Slider();
 
   
 window.scrollRight = function(){
+    try{
      if(scrollCounter <= elements.heroes.scrollWidth - elements.heroes.clientWidth){
         elements.heroes.scrollTo({
             top:0,
             left:(scrollCounter+=scrollPer),
             behavior: 'smooth'
         })
-     }
+    } }catch(error){
+
+    } try{
+        if(scrollCounter <= elements.comicsTrending.scrollWidth - elements.comicsTrending.clientWidth){
+         elements.comicsTrending.scrollTo({
+            top:0,
+            left:(scrollCounter+=scrollPer),
+            behavior: 'smooth'
+         })
+     } }
+      catch(error){
+
+      }
  }
 
  window.scrollLeftz = function(){
-    console.log(111)
+     try{
    elements.heroes.scrollTo({
        top:0,
        left:(scrollCounter-=scrollPer),
        behavior: 'smooth'
    })
+} catch(error){
+
+}
+
+try{
+   elements.comicsTrending.scrollTo({
+    top:0,
+    left:(scrollCounter-=scrollPer),
+    behavior: 'smooth'
+   })
+}catch(error){
+    
+}
+
    if(scrollCounter < 0){
        scrollCounter = 0
    }
@@ -69,8 +96,6 @@ loaders.removeLoader()
  const ComicsResult = async () => {
      //display Comics
      await comics.getComics()
-     //Just Random rating number using Math.random(), because they don't provide the ratingNumber on their Api
-     comics.ratingNum()
  }
  characterResult()
  ComicsResult()

@@ -1,12 +1,51 @@
 @import '../config';
 
+.character-btn{
+
+    button{
+        float: right;
+        padding: 5px;
+        transition: 0.5s;
+        @include red-btn-body-position;
+        @include transition-btn;
+        border: transparent;
+        background: transparent;
+        position: relative;
+        right: 30px;
+}
+
+
+
+
+    i{
+        color: #fff;
+        background-color: $my-red;
+        border: 2px solid $my-red;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        padding: 10px;
+        &:hover
+{
+            background-color:$my-red-black;
+            border: transparent;
+        }
+}
+
+}
+
 .comics-trending{
     list-style: none;
     display: flex;
    position: relative;
    right: 30px;
+   bottom: 80px;
+   width: 100%;
     @include spinner;
     @include rotation;
+    overflow: hidden;
     
     li{
        margin: 30px;
@@ -44,37 +83,4 @@
    -ms-border-radius: 5px;
    -o-border-radius: 5px;
     }
-
-   
-    
-        .rating{
-            transform: translateX(-30px);
-            -webkit-transform: translateX(-30px);
-            -moz-transform: translateX(-30px);
-            -ms-transform: translateX(-30px);
-            -o-transform: translateX(-30px);
-ul{
-         position: relative;
-         bottom: 20px;
-        li{
-            list-style: none;
-            display: inline-block;
-            i{
-                font-size: 80%;
-                color: #F5A962;
-            }
-        }
-    
-        li:last-child{
-            position: relative;
-            right: 60px;
-            font-size: 80%;
-            transform: translate(0,13%);
-            -webkit-transform: translate(0,13%);
-            -moz-transform: translate(0,13%);
-            -ms-transform: translate(0,13%);
-            -o-transform: translate(0,13%);
-    }
-    }
-        }
 }
