@@ -62,7 +62,7 @@ export class Characters{
         try{
         this.getRes = await axios(`https://gateway.marvel.com/v1/public/characters?ts=1&apikey=adfbe33f945bd7bbefc6420a1fe57e84&hash=36d9c6c7b4db64ac4ca23f0fa90cdb40`)
         this.dataResult = this.getRes.data.data.results
-        const u = `/portrait_fantastic.`
+        const u = `/portrait_fantastic.`;
         this.dataResult.forEach((items)=>{
           const addHtml = `
           <a href="">
@@ -103,7 +103,61 @@ export class Characters{
       }
       }
 
+      
+
+      async getSingleCharacter(){
+        let characterId = sessionStorage.getItem('characterId');
+        const singleCharacter = await axios(`https://gateway.marvel.com/v1/public/characters/${characterId}?ts=1&apikey=adfbe33f945bd7bbefc6420a1fe57e84&hash=36d9c6c7b4db64ac4ca23f0fa90cdb40`)
+      const singleData = singleCharacter.data.data.results;
+      const u = `/portrait_fantastic.`;
+      singleData.forEach((character) => {
+
+        const characterSeries = character.series.items.map((ser) => {
+         return `<span>${ser.name}</span>`
+        }).join(", ")
+
+      
+        const markup = `
+        <a href="./index.html"><h6><i class="fas fa-arrow-left"></i> Home</h6></a>
+        <div class="img-container">
+            <img src="${character.thumbnail.path}${u}${character.thumbnail.extension}" alt="">
+        </div>
+
+        <div class="description-container">
+            <h1>${character.name}</h1>
+            <p>${character.description}</p>
+                <p>${characterSeries}</p>
+        </div>
+        `
+  
+      elements.infoCharacter.insertAdjacentHTML("afterbegin",markup)
+   let comicMarkup = ` 
+            <div class="character-comics"> 
+                <img src="./IMAGES/ghost rider comic.jpg" alt="">
+                <h3>${character.comics}</h3>
+                
+            </div>
+            `
+            elements.comicCon.insertAdjacentHTML('afterend',comicMarkup)
+      })
+
+
+      }
+
+
     }
+
+    try{
+    window.getCharacterId = function(id){
+      window.sessionStorage.setItem('characterId',id)
+      window.location = 'charactersinfo.html';
+      return false
+    }
+  } catch(error){
+
+  }
+
+  
 
 
 

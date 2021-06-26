@@ -6,11 +6,7 @@
   height: 100vh;
 }
 
-.info-container .img-container {
-  position: relative;
-}
-
-.info-container .img-container .spinner {
+.info-container .spinner {
   font-size: 500%;
   color: #DA0000;
   text-align: center;
@@ -55,6 +51,43 @@
   }
 }
 
+.info-container .img-container {
+  position: relative;
+}
+
+.info-container .img-container .spinner {
+  font-size: 500%;
+  color: #DA0000;
+  text-align: center;
+  animation: rotation 0.5 ease;
+  -webkit-animation: rotation 1.0s infinite linear;
+  margin-top: 100px;
+  margin-left: 45%;
+  margin-bottom: 100px;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+
+.info-container .img-container .spinner {
+  position: absolute;
+  right: 70%;
+}
+
 .info-container .img-container img {
   height: auto;
   width: 30%;
@@ -68,6 +101,40 @@
   left: 50%;
 }
 
+.info-container .description-container .spinner {
+  font-size: 500%;
+  color: #DA0000;
+  text-align: center;
+  animation: rotation 0.5 ease;
+  -webkit-animation: rotation 1.0s infinite linear;
+  margin-top: 100px;
+  margin-left: 45%;
+  margin-bottom: 100px;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+
+.info-container .description-container .spinner {
+  position: relative;
+  left: 11rem;
+  bottom: 5rem;
+}
+
 .info-container .description-container p {
   width: 70%;
 }
@@ -75,6 +142,34 @@
 .characters-comics-container {
   padding-top: 30px;
   padding-left: 20px;
+}
+
+.characters-comics-container .spinner {
+  font-size: 500%;
+  color: #DA0000;
+  text-align: center;
+  animation: rotation 0.5 ease;
+  -webkit-animation: rotation 1.0s infinite linear;
+  margin-top: 100px;
+  margin-left: 45%;
+  margin-bottom: 100px;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
 }
 
 .characters-comics-container .character-comics img {

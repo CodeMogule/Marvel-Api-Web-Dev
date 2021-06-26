@@ -25,6 +25,7 @@ window.characterSlider = new Slider();
 
 
 
+
   let get = new character.Characters;
 
   let scrollCounter = 0;
@@ -97,8 +98,16 @@ loaders.removeLoader()
      //display Comics
      await comics.getComics()
  }
+
+ const characterInfo = async () => {
+     await get.getSingleCharacter()
+ }
+
  characterResult()
  ComicsResult()
+characterInfo();
+
+
 
 
 
