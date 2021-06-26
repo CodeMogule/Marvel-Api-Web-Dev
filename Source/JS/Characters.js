@@ -14,7 +14,6 @@ export class Characters{
         this.dataResult = this.getRes.data.data.results
         const u = `/portrait_fantastic.`
         this.dataResult.slice(0,10).forEach((cur)=>{
-          console.log(cur)
           let markup  = `
           <li>
           <a onclick="getCharacterId(${cur.id})">
@@ -65,7 +64,7 @@ export class Characters{
         const u = `/portrait_fantastic.`;
         this.dataResult.forEach((items)=>{
           const addHtml = `
-          <a href="">
+          <a onclick="getCharacterId(${items.id})">
           <img src="${items.thumbnail.path}${u}${items.thumbnail.extension}" alt="">
           <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 230 46" style="width: 100%;" class="border-design">
             <defs>
@@ -106,16 +105,16 @@ export class Characters{
       
 
       async getSingleCharacter(){
+        try{
         let characterId = sessionStorage.getItem('characterId');
         const singleCharacter = await axios(`https://gateway.marvel.com/v1/public/characters/${characterId}?ts=1&apikey=adfbe33f945bd7bbefc6420a1fe57e84&hash=36d9c6c7b4db64ac4ca23f0fa90cdb40`)
       const singleData = singleCharacter.data.data.results;
       const u = `/portrait_fantastic.`;
       singleData.forEach((character) => {
 
-        const characterSeries = character.series.items.map((ser) => {
+        const characterSeries = character.series.items.slice(0,5).map((ser) => {
          return `<span>${ser.name}</span>`
         }).join(", ")
-
       
         const markup = `
         <a href="./index.html"><h6><i class="fas fa-arrow-left"></i> Home</h6></a>
@@ -126,24 +125,48 @@ export class Characters{
         <div class="description-container">
             <h1>${character.name}</h1>
             <p>${character.description}</p>
-                <p>${characterSeries}</p>
+                <p>Series: ${characterSeries}</p>
         </div>
         `
-  
       elements.infoCharacter.insertAdjacentHTML("afterbegin",markup)
-   let comicMarkup = ` 
-            <div class="character-comics"> 
-                <img src="./IMAGES/ghost rider comic.jpg" alt="">
-                <h3>${character.comics}</h3>
-                
-            </div>
-            `
-            elements.comicCon.insertAdjacentHTML('afterend',comicMarkup)
+
       })
+    }catch(error){
 
-
+    }
       }
 
+      texttrim(str, maxLength, { side = "end", ellipsis = "..." } = {}) {
+        if (str.length > maxLength) {
+          switch (side) {
+            case "start":
+              return ellipsis + str.slice(-(maxLength - ellipsis.length));
+            case "end":
+            default:
+              return str.slice(0, maxLength - ellipsis.length) + ellipsis;
+          }
+        }
+        return str;
+      }
+
+        async getSingleComics(){
+          let characterId = sessionStorage.getItem('characterId')
+          const singleComics = await axios(`https://gateway.marvel.com/v1/public/characters/${characterId}/comics?ts=1&apikey=adfbe33f945bd7bbefc6420a1fe57e84&hash=36d9c6c7b4db64ac4ca23f0fa90cdb40`);
+          const dataComics = singleComics.data.data.results;
+          const u = `/portrait_fantastic.`;
+          dataComics.forEach((com) => {
+          
+            let comicMarkup = ` 
+            <div class="character-comics"> 
+            <a href ="">
+                <img src="${com.thumbnail.path}${u}${com.thumbnail.extension}" alt="">
+                <h3>${this.texttrim(com.title,15)}t</h3>
+                </a>
+            </div>
+            `
+            elements.comicCon.insertAdjacentHTML('beforeend',comicMarkup)
+          })
+        }
 
     }
 
