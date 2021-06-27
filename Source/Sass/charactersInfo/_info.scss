@@ -9,14 +9,6 @@
     @include rotation;
 
     .img-container{
-        @include spinner;
-        @include rotation;
-
-        .spinner{
-            position: absolute;
-            right: 70%;
-          
-        }
         position: relative;
         img{
             height: auto;
@@ -30,19 +22,12 @@
         position: absolute;
         bottom: 30%;
         left: 50%;
-        @include spinner;
-        @include rotation;
-
-        .spinner{
-            position: relative;
-            left: 11rem;
-            bottom: 5rem;
 }
          
         p{ width: 70%;
         }
     }
-}
+
 
 .characters-comics-container{
 

@@ -409,6 +409,11 @@ button {
   -o-transition: 0.5s;
 }
 
+#comics .box a {
+  text-decoration: none;
+  color: #000;
+}
+
 #comics .box:hover {
   transform: translateY(-1%);
   -webkit-transform: translateY(-1%);

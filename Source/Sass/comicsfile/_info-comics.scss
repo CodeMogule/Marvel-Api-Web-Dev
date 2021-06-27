@@ -1,0 +1,34 @@
+@import '../config';
+
+.comic-info-container{
+    background-color: $perfect-black;
+    position: relative;
+    height: 100vh;
+
+    @include spinner;
+    @include rotation;
+    .img-container{
+        position: relative;
+        img{
+           height: auto;
+           width: 15%;
+           position: absolute;
+           left: 15%;
+           transform: translate(0,45%);
+           -webkit-transform: translate(0,45%);
+           -moz-transform: translate(0,45%);
+           -ms-transform: translate(0,45%);
+           -o-transform: translate(0,45%);
+}
+    }
+
+    .description-container{
+        position: absolute;
+        bottom: 30%;
+        left: 50%;
+}
+         
+        p{ width: 70%;
+            padding-top: 10px;
+        }
+}

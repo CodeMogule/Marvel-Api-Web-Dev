@@ -158,9 +158,9 @@ export class Characters{
           
             let comicMarkup = ` 
             <div class="character-comics"> 
-            <a href ="">
+            <a onclick ="getComicsId(${com.id})">
                 <img src="${com.thumbnail.path}${u}${com.thumbnail.extension}" alt="">
-                <h3>${this.texttrim(com.title,15)}t</h3>
+                <h3>${this.texttrim(com.title,15)}</h3>
                 </a>
             </div>
             `

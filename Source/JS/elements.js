@@ -7,5 +7,6 @@ export  const elements = {
     forLoader: document.querySelector('.for-loader'),
     comicsTrending: document.querySelector('.comics-trending'),
     infoCharacter: document.querySelector('.info-container'),
-    comicCon: document.querySelector('.characters-comics-container')
+    comicCon: document.querySelector('.characters-comics-container'),
+    comicInfo: document.querySelector(".comic-info-container")
 };

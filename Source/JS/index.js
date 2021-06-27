@@ -107,10 +107,15 @@ loaders.removeLoader()
      await get.getSingleComics()
  }
 
+ const comicInfo = async () => {
+     await comics.comicsSingle()
+ }
+
  characterResult()
  ComicsResult()
 characterInfo();
 characterComics();
+comicInfo();
 
 
 
