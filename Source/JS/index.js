@@ -4,27 +4,28 @@ import { elements } from "./elements";
 import * as loaders from './loader';
 import * as comics from './comics';
 import * as search from './search';
-
+import * as swipe from './swiper';
 
 let counter = 1;
 
 try{
 window.headerSlider = new Slider()
 headerSlider.sliderWipe(counter);
-
+ 
  let timer = setInterval(autoSlide,9000)
 function autoSlide (){
     headerSlider.counter+=1;
     headerSlider.sliderWipe(headerSlider.counter)
 }
 
+
+
+
 window.characterSlider = new Slider();
  //characterSlider.sliderWipeCharacters(counter)
 } catch(error){
     console.log(`error`)
 }
-
-
 
 
   let get = new character.Characters;
@@ -133,11 +134,14 @@ loaders.removeLoader()
   function test11(){
      console.log(111)
  }
+
+ swipe.startTouch();
+
 //characterResult()
  //ComicsResult()
-characterInfo();
-characterComics();
-comicInfo();
+//characterInfo();
+//characterComics();
+//comicInfo();
 
 
 

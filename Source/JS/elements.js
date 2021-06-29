@@ -1,5 +1,6 @@
 export  const elements = {
     slider: document.querySelectorAll('.slider-custom'),
+    sliderContainer: document.querySelector('.slider'),
     dots: document.querySelectorAll('.dot'),
     sliderCharacter: document.querySelectorAll('.img-item-container'),
     heroes: document.querySelector('.img-item-container'),

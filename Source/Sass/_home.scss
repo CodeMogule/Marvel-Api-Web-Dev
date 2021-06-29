@@ -50,6 +50,7 @@ header{
     display: none;
     animation:  slide_right 1.3s ease ;
     -webkit-animation:  slide_right 1.3s ease ;
+    user-select: none;
 }
 
 .slider-custom h1{

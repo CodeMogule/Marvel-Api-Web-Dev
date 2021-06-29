@@ -6,6 +6,7 @@
         this.counter+=x;
         this.sliderWipe(this.counter);
     };
+    
     this.addSlideCharacter = function(x){
         this.counter+=x;
         this.sliderWipeCharacters(this.counter);
