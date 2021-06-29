@@ -6,42 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Vendors/CSS/7.1 Grid.css">
     <link rel="stylesheet" href="./Vendors/CSS/normalize.css">
-    <link rel="stylesheet" href="./Sass/charactersStyles/characters.css">
+    <link rel="stylesheet" href="./Sass/searchView/searchView.css">
     <link rel="icon" href="./IMAGES/favicon.png" type="image/gif" sizes="16x16">
-    <title>Characters| HeroLab</title>
+    <title>Search| HeroLab</title>
 </head>
 <body>
     <header>
-        <div class="background-header">
-          <h1>herolab</h1>
-          <div class="row">
-          <ul class="main-lists">
-              <div class="bod-lists">
-                  <li><a href="./games.html">Games</a></li>
-                  <li><a href="">Characters</a></li>
-                  <li><a href="./comics.html">Comics</a></li>
-                  <li><a href="./index.html">Home</a></li>
-              </div>
-          </ul>
-          <div class="searches">
-            <a href="./searchview.html">
-              <h6><i class="fas fa-search"></i> Search</h6>
-            </a>
-            </div>
-          </div>
-        </div>
+      <a href="./index.html"><h6><i class="fas fa-arrow-left"></i> Home</h6></a>
+          <form id="search-box">
+          <input type="search" placeholder="Search for Spider-Man,hulk etc..." class="search-text">
+          </form>
         </header>
 
-        
-        <div class="img-header" style="background:linear-gradient(rgba(3, 3, 3, 0.514), rgba(3, 3, 3, 0.596)), url('./IMAGES/marvel\ characters.jpg')">
-            <h3>Characters</h3>
-        </div>
-
-
-        <section class="character">
-            <div class="character-lists for-loader">
-                <!--
-                <i class="fas fa-circle-notch spinner"></i>
+        <section class="character-view for-loader">
+            <div class="search-lists-character">
+              <!--
                   <a href="">
                 <img src="./IMAGES/john-branham-ghost-rider-no-eyes.jpg" alt="">
                 <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 230 46" style="width: 100%;" class="border-design">
@@ -75,7 +54,8 @@
             -->
             </div>
         </section>
-        <script src="./JS/bundle.js"></script>
-        <script src="https://kit.fontawesome.com/fc8b51f2eb.js" crossorigin="anonymous"></script>
+      </body>
+      <script type="text/javascript" defer src="./JS/bundle.js"></script>
+      <script src="https://kit.fontawesome.com/fc8b51f2eb.js" crossorigin="anonymous"></script>
 </body>
 </html>

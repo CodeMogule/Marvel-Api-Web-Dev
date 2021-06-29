@@ -2,7 +2,8 @@ import { Slider } from "./slider";
 import * as character from './Characters';
 import { elements } from "./elements";
 import * as loaders from './loader';
-import * as comics from './comics'
+import * as comics from './comics';
+import * as search from './search';
 
 
 let counter = 1;
@@ -30,7 +31,6 @@ window.characterSlider = new Slider();
 
   let scrollCounter = 0;
 
-  
 window.scrollRight = function(){
     try{
      if(scrollCounter <= elements.heroes.scrollWidth - elements.heroes.clientWidth){
@@ -79,10 +79,28 @@ try{
        scrollCounter = 0
    }
 }
-
-
-
  let scrollPer = 400;
+
+ 
+
+ const getSearchResult = async() => {
+ let inputText = elements.searchText.value
+ console.log(inputText)
+    placeStorage(inputText) 
+    loaders.loader()
+    let query = window.sessionStorage.getItem('query')   
+    await search.getSearch(query)
+    loaders.removeLoader()
+ }
+ 
+ try{
+elements.searchBox.addEventListener('submit', (event) => {
+   getSearchResult()
+     event.preventDefault()
+ })} catch(error){
+
+ }
+
 
  const  characterResult = async () => {
 //spinner
@@ -111,8 +129,12 @@ loaders.removeLoader()
      await comics.comicsSingle()
  }
 
- characterResult()
- ComicsResult()
+
+  function test11(){
+     console.log(111)
+ }
+//characterResult()
+ //ComicsResult()
 characterInfo();
 characterComics();
 comicInfo();

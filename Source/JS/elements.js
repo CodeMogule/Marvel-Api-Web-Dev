@@ -8,5 +8,8 @@ export  const elements = {
     comicsTrending: document.querySelector('.comics-trending'),
     infoCharacter: document.querySelector('.info-container'),
     comicCon: document.querySelector('.characters-comics-container'),
-    comicInfo: document.querySelector(".comic-info-container")
+    comicInfo: document.querySelector(".comic-info-container"),
+    searchText: document.querySelector(".search-text"),
+    searchBox: document.getElementById("search-box"),
+    searchCharacter: document.querySelector(".search-lists-character"),
 };

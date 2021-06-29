@@ -1,0 +1,40 @@
+@import '../config';
+@import '../gamesStyles/navigations';
+@import '../searchView/viewCharacters';
+@import '../searchView/searchbox';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-size: 20px;
+    background-color: rgb(218, 216, 216);
+    font-family: lato;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+h6{
+    font-family: 'Dela Gothic One', cursive;
+    color: $my-red ;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 1rem;
+
+
+    &i{
+        color: $my-red;
+    }
+}
+
+.row{
+    margin: auto;
+    width: 1140px;
+}

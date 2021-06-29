@@ -10,15 +10,22 @@
 @include main-items;
 @include main-items-links;
 
-header input{
-    border: 2px solid white;
-    border-radius: 6px;
-    font-size: 90%;
-    padding: 10px;
-    transform: translate(50rem,-135px);
-    width: 20% !important;
-    -webkit-transform: translate(50rem,-135px);
-    -moz-transform: translate(50rem,-135px);
-    -ms-transform: translate(50rem,-135px);
-    -o-transform: translate(50rem,-135px);
+.searches{
+    position: relative;
+    h6{
+        font-size: 1rem;
+       right: 0;
+       bottom: 5.3rem;
+        position: absolute;
+        color: #fff;
+        transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+            -o-transition: 0.5s;
+
+        &:hover{
+            color: $my-red;
+}
+    }
 }

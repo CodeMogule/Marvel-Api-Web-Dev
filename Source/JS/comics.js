@@ -29,6 +29,7 @@ export async function getComics(){
                 </ul>
         `
         elements.comicsTrending.insertAdjacentHTML('afterbegin',comicMarkup);
+        
     })
 } catch(error){
 
@@ -81,6 +82,7 @@ export async function comicsSingle(){
        `
 
        elements.comicInfo.insertAdjacentHTML('beforeend',markup)
+       
 
    })
 }catch(error){

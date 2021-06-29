@@ -109,7 +109,7 @@ export class Characters{
         let characterId = sessionStorage.getItem('characterId');
         const singleCharacter = await axios(`https://gateway.marvel.com/v1/public/characters/${characterId}?ts=1&apikey=adfbe33f945bd7bbefc6420a1fe57e84&hash=36d9c6c7b4db64ac4ca23f0fa90cdb40`)
       const singleData = singleCharacter.data.data.results;
-      const u = `/portrait_fantastic.`;
+      const u = `/standard_fantastic.`;
       singleData.forEach((character) => {
 
         const characterSeries = character.series.items.slice(0,5).map((ser) => {
@@ -179,6 +179,7 @@ export class Characters{
   } catch(error){
 
   }
+  
 
   
 
