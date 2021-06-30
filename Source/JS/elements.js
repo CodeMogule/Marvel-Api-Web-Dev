@@ -5,6 +5,7 @@ export  const elements = {
     sliderCharacter: document.querySelectorAll('.img-item-container'),
     heroes: document.querySelector('.img-item-container'),
     getCharactersLists : document.querySelector('.character-lists'),
+    characterItems: document.querySelectorAll('.character-items'),
     forLoader: document.querySelector('.for-loader'),
     comicsTrending: document.querySelector('.comics-trending'),
     infoCharacter: document.querySelector('.info-container'),
@@ -13,4 +14,8 @@ export  const elements = {
     searchText: document.querySelector(".search-text"),
     searchBox: document.getElementById("search-box"),
     searchCharacter: document.querySelector(".search-lists-character"),
+    navContainer: document.querySelector('.mobile-nav'),
+    hamBtn: document.querySelector('.toggle-bar'),
+    closeBtn: document.querySelectorAll('.close-circle'),
+    body:document.querySelector('body')
 };

@@ -40,6 +40,7 @@
     }
 
     .img-item-container{
+        user-select: none;
         display: flex;
         list-style: none;
         animation:  slide_right 1.3s ease ;
@@ -97,6 +98,7 @@
                 -moz-transform:translateY(-150%) ;
                 -ms-transform:translateY(-150%) ;
                 -o-transform:translateY(-150%) ;
+                user-select: none;
 }
                 }
             

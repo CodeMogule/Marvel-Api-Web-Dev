@@ -198,6 +198,10 @@ header h1 {
 }
 
 .comics-trending {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;

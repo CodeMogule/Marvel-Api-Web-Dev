@@ -15,9 +15,9 @@ export class Characters{
         const u = `/portrait_fantastic.`
         this.dataResult.slice(0,10).forEach((cur)=>{
           let markup  = `
-          <li>
+          <li class = 'character-items'>
           <a onclick="getCharacterId(${cur.id})">
-         <img src="${cur.thumbnail.path}${u}${cur.thumbnail.extension}" alt="">
+         <img src="${cur.thumbnail.path}${u}${cur.thumbnail.extension}" alt=""  draggable="false">
              <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 230 46" style="width: 100%;" class="border-design">
                <defs>
                  <style>.cls-1{fill:none;}.cls-2,.outline-1{opacity:0.5;}.cls-3,.outline-2,.cls-5{fill:#fff;}.cls-3{opacity:0.08;}.cls-4,.cls-6{fill-rule:evenodd;}.cls-6{fill:url(#IJ2);}.cls-7{opacity:0.2;} .bg{fill:rgba(0,0,0,0.5)}</style>
@@ -180,9 +180,3 @@ export class Characters{
 
   }
   
-
-  
-
-
-
-

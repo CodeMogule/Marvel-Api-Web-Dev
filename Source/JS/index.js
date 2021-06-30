@@ -6,6 +6,7 @@ import * as comics from './comics';
 import * as search from './search';
 import * as swipe from './swiper';
 
+
 let counter = 1;
 
 try{
@@ -19,17 +20,26 @@ function autoSlide (){
 }
 
 
-
-
 window.characterSlider = new Slider();
  //characterSlider.sliderWipeCharacters(counter)
 } catch(error){
     console.log(`error`)
 }
-
-
   let get = new character.Characters;
 
+    //mobile-nav
+ window.toggleAction = function (){
+        elements.navContainer.style.left = '0';
+        elements.body.classList.add('minimize')
+    }
+    
+window.closeAction = function(){
+        elements.navContainer.style.left = '-100vh';
+        elements.body.classList.remove('minimize')
+    }
+    //
+
+  //scrolls
   let scrollCounter = 0;
 
 window.scrollRight = function(){
@@ -65,6 +75,7 @@ window.scrollRight = function(){
 } catch(error){
 
 }
+//
 
 try{
    elements.comicsTrending.scrollTo({
@@ -136,9 +147,10 @@ loaders.removeLoader()
  }
 
  swipe.startTouch();
-
-//characterResult()
- //ComicsResult()
+swipe.scrollSwipeCharacters();
+swipe.scrollSwipeComics()
+//characterResult();
+ //ComicsResult();
 //characterInfo();
 //characterComics();
 //comicInfo();

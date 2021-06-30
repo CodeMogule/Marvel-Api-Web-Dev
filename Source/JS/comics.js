@@ -21,7 +21,7 @@ export async function getComics(){
         let comicMarkup = `
         <li>
                         <a onclick = "getComicsId(${comics.id})">
-                            <img src="${comics.thumbnail.path}${url}${comics.thumbnail.extension}" alt="">
+                            <img src="${comics.thumbnail.path}${url}${comics.thumbnail.extension}" alt="" draggable="false">
                         </a>
                             <h3> ${comics.title} </h3>
                            ${p}
