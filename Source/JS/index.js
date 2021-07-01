@@ -149,7 +149,7 @@ loaders.removeLoader()
  swipe.startTouch();
 swipe.scrollSwipeCharacters();
 swipe.scrollSwipeComics()
-//characterResult();
+characterResult();
  //ComicsResult();
 //characterInfo();
 //characterComics();
