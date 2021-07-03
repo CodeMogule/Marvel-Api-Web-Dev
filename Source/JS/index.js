@@ -34,7 +34,7 @@ window.characterSlider = new Slider();
     }
     
 window.closeAction = function(){
-        elements.navContainer.style.left = '-100vh';
+        elements.navContainer.style.left = '-300vh';
         elements.body.classList.remove('minimize')
     }
     //
@@ -149,7 +149,7 @@ loaders.removeLoader()
  swipe.startTouch();
 swipe.scrollSwipeCharacters();
 swipe.scrollSwipeComics()
-characterResult();
+//characterResult();
  //ComicsResult();
 //characterInfo();
 //characterComics();

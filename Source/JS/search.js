@@ -2,7 +2,7 @@ import axios from "axios";
 import { elements } from "./elements";
 
 export async function getSearch(query){
-    let searchRes = await axios(`https://gateway.marvel.com/v1/public/characters?name=${query}&ts=1&apikey=adfbe33f945bd7bbefc6420a1fe57e84&hash=36d9c6c7b4db64ac4ca23f0fa90cdb40`)
+    let searchRes = await axios(`https://gateway.marvel.com/v1/public/characters?name=${query}&offset=0&ts=1&apikey=adfbe33f945bd7bbefc6420a1fe57e84&hash=36d9c6c7b4db64ac4ca23f0fa90cdb40`)
     let searchData = searchRes.data.data.results;
     const url = `/standard_fantastic.`
     searchData.forEach((dataRes) => {

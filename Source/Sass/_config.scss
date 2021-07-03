@@ -141,24 +141,142 @@ $my-red-black:#7a0000;
 
 @mixin small-devices {
     @media only screen and (min-width: 600px) and (max-width:767px) {
-        
+        @content;
     }
 }
 
 @mixin medium-devices {
-    @media only screen and (min-width: 768px) and (max-width:991px){
-
+    @media only screen and (min-width: 767px) and (max-width:991px){
+@content;
     }
 }
 
 @mixin large-devices {
-    @media only screen and (min-width: 992px) and (max-width:1999px){
+    @media only screen and (min-width: 991px) and (max-width:1235px){
 @content;
     }
 }
 
 @mixin extra-large-devices {
-    @media only screen and (min-width: 1200px){
+    @media only screen and (min-width: 1235px){
+        @content;
+    }
+}
 
+
+// mobile navigation
+@mixin minimize {
+    .minimize{
+        overflow: hidden;
+        position: fixed;
+    }
+}
+
+//toggle hamburger
+@mixin hamburger {
+    .background-header{
+        position: relative;
+        .toggle-bar{
+            color: #fff;
+            cursor: pointer;
+            font-size: 150%;
+            position: absolute;
+            right: 5%;
+            bottom: 37%;
+            &:hover{
+                color: $my-red;
+            }
+        }
+        }
+}
+
+//close btn with background and lists menu
+@mixin menu-lists {
+    .mobile-nav{
+        label{
+            float: right;
+        .close-circle{
+            color: #fff;
+            cursor: pointer;
+            font-size: 250%;
+            position: relative;
+            top: 20px;
+            &:hover{
+                color: $my-red;
+            }
+        }
+    }
+
+        transition: 1s ease;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: -300vh;
+        z-index: 2;
+        background-size: cover;
+        background-position: center;
+        .mobile-list-container{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            transform: translate(0,40px);
+            -webkit-transform: translate(0,100px);
+            -moz-transform: translate(0,40px);
+            -ms-transform: translate(0,40px);
+            -o-transform: translate(0,40px);
+
+            li{
+                margin: 30px;
+            }
+
+            li a {
+                text-decoration: none;
+                font-size: 200%;
+                color: #fff;
+                &:hover{
+                    color:#DA0000 ;
+                opacity: 1;
+                }
+            
+                &:hover::after{
+                    opacity: 1;
+                }
+            
+                &::after{
+                    content:"";
+                    display: block;
+                    width: 35%;
+                    margin-left: 10px;
+                    border-bottom: 2px solid white;
+                    transition: 0.4s;
+                    opacity: 0;
+                    position: relative;
+                    top: 6px;
+                }
+            }
+        }
+    }
+}
+
+//mobile search 
+@mixin mob-search {
+    .mobile-searches{
+        display: flex;
+
+        a{
+            text-decoration: none;
+            color: #fff;
+
+            h6{
+                font-size: 200%;
+                margin: 30px;
+
+                &:hover{
+                    color: $my-red;
+        }
+            }
+        }
     }
 }

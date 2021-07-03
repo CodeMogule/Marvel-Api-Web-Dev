@@ -12,6 +12,14 @@ header h1 {
 }
 
 .main-lists {
+  transform: translate(-230px, -150px) !important;
+  -webkit-transform: translate(-230px, -150px) !important;
+  -moz-transform: translate(-230px, -150px) !important;
+  -ms-transform: translate(-230px, -150px) !important;
+  -o-transform: translate(-230px, -150px) !important;
+}
+
+.main-lists {
   list-style: none;
   transform: translate(-160px, -140px);
   -webkit-transform: translate(-160px, -140px);
@@ -62,8 +70,8 @@ header h1 {
 
 .searches h6 {
   font-size: 1rem;
-  right: 0;
-  bottom: 5.3rem;
+  right: 4rem;
+  bottom: 5.8rem;
   position: absolute;
   color: #fff;
   transition: 0.5s;
