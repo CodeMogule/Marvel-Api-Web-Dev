@@ -1,0 +1,218 @@
+@media only screen and (max-width:600px) {
+
+    .comics{
+        padding-left: initial;
+        h1{
+            font-size: 130%;
+        }
+    }
+
+    .comics-feature{
+        display: grid !important;
+        grid-template-columns: repeat(auto-fit,minmax(47.5%,1fr)) !important;
+    }
+
+    .comics-display{
+        transform: translate(-10%,0);
+        margin: 20px;
+        padding-right: 30px;
+        -webkit-transform: translate(-10%,0);
+        -moz-transform: translate(-10%,0);
+        -ms-transform: translate(-10%,0);
+        -o-transform: translate(-10%,0);
+a{
+            img{
+             width: 20vw !important;
+             height: 20vh !important;
+            }
+        }
+
+        .comic-title{
+            p{
+                font-size: 50%;
+            }
+            h1{
+                font-size: 75% !important;
+            }
+        }
+    }
+
+    .comics-trending{
+        padding-left: 5px;
+        li{
+            a{
+                img{
+                    width: 20vw;
+                    height:20vh ;
+                }
+            }
+            
+            h3{
+                font-size: 50%;
+            }
+        }
+    }
+
+    .character-btn{
+        button{
+            i{
+                font-size: 70% !important;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:485px) and (max-width:600px) {
+    .comics-display{
+        transform: translate(-1%,0);
+        margin: 20px;
+        padding-right: 30px;
+        -webkit-transform: translate(-1%,0);
+        -moz-transform: translate(-1%,0);
+        -ms-transform: translate(-1%,0);
+        -o-transform: translate(-1%,0);
+a{
+            img{
+             width: 20vw !important;
+             height: 20vh !important;
+            }
+        }
+
+        .comic-title{
+            p{
+                font-size: 50%;
+            }
+            h1{
+                font-size: 75% !important;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:767px) {
+
+    .comics{
+        padding-left: initial;
+    }
+
+    .comics-feature{
+        display: grid !important;
+        grid-template-columns: repeat(auto-fit,minmax(47.5%,1fr)) !important;
+      
+    }
+
+    .comics-display{
+        transform: translate(-1%,0);
+        margin: 20px;
+        padding-right: 30px;
+        -webkit-transform: translate(-1%,0);
+        -moz-transform: translate(-1%,0);
+        -ms-transform: translate(-1%,0);
+        -o-transform: translate(-1%,0);
+a{
+            img{
+             width: 23vw !important;
+             height: 30vh !important;
+            }
+        }
+
+        .comic-title{
+            p{
+                font-size: 50%;
+            }
+            h1{
+                font-size: 75% !important;
+            }
+        }
+    }
+
+    .comics-trending{
+        padding-left: 5px;
+        li{
+            a{
+                img{
+                    width: 20vw;
+                    height:25vh ;
+                }
+            }
+            
+            h3{
+                font-size: 85%;
+            }
+        }
+    }
+
+    .character-btn{
+        button{
+            i{
+                font-size: 70% !important;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 767px) and (max-width:991px){
+    .comics{
+        padding-left: initial;
+    }
+
+    .comics-feature{
+        display: grid !important;
+        grid-template-columns: repeat(auto-fit,minmax(47.5%,1fr)) !important;
+      
+    }
+
+    .comics-display{
+        transform: translate(-1%,0);
+        margin: 20px;
+        padding-right: 30px;
+        -webkit-transform: translate(-1%,0);
+        -moz-transform: translate(-1%,0);
+        -ms-transform: translate(-1%,0);
+        -o-transform: translate(-1%,0);
+a{
+            img{
+             width: 25vw !important;
+             height: 40vh !important;
+            }
+        }
+
+        .comic-title{
+            p{
+                font-size: 50%;
+            }
+            h1{
+                font-size: 75% !important;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 991px) and (max-width:1235px){
+    .comics-feature{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(23.75%,1fr));
+    }
+
+    .comics-display{
+        img{
+            width: 18vw !important;
+            height: 45vh !important;
+        }
+
+        
+        .comic-title{
+            p{
+                font-size: 50%;
+            }
+            h1{
+                font-size: 160% !important;
+            }
+        }
+    }
+}
+
+
+

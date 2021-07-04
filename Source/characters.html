@@ -14,7 +14,26 @@
     <header>
         <div class="background-header">
           <h1>herolab</h1>
-          <div class="row">
+          <i class="fas fa-bars toggle-bar" onclick="toggleAction()"></i>
+          <div class="row" style="width: auto;">
+            <nav class="mobile-nav" style="background-image: url(./IMAGES/nav-lava.jpg); width: 108vw; height: 105vh;">
+              <label>
+                  <i class="far fa-times-circle close-circle" onclick="closeAction()"></i>
+              </label>
+              <ul class="mobile-list-container">
+          
+                  <div class="mobile-searches">
+                      <a href="./searchview.html">
+                        <h6><i class="fas fa-search"></i> Search</h6>
+                      </a>
+                    </div>
+          
+                  <li><a href="./games.html">Games</a></li>
+                      <li><a href="./characters.html">Characters</a></li>
+                      <li><a href="./comics.html">Comics</a></li>
+                      <li><a href="./index.html">Home</a></li>
+              </ul>
+          </nav>
           <ul class="main-lists">
               <div class="bod-lists">
                   <li><a href="./games.html">Games</a></li>

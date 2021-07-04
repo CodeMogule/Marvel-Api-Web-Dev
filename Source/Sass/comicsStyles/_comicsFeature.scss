@@ -14,7 +14,8 @@
     
     .comics-feature{
        
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(23.75%,1fr));
         .comics-display{
             position: relative;
             transition: 0.5s;

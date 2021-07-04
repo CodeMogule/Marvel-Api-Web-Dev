@@ -224,6 +224,23 @@ header h1 {
   font-weight: bold;
 }
 
+@media only screen and (max-width: 600px) {
+  .search-text {
+    width: 90% !important;
+  }
+  .search-lists-character a img {
+    width: 60vw !important;
+    height: 40vh !important;
+  }
+  .search-lists-character a .border-design {
+    transform: translate(0, -100%);
+    -webkit-transform: translate(0, -100%);
+    -moz-transform: translate(0, -100%);
+    -ms-transform: translate(0, -100%);
+    -o-transform: translate(0, -100%);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

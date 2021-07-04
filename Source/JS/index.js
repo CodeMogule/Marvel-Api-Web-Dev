@@ -150,7 +150,7 @@ loaders.removeLoader()
 swipe.scrollSwipeCharacters();
 swipe.scrollSwipeComics()
 //characterResult();
- //ComicsResult();
+ ComicsResult();
 //characterInfo();
 //characterComics();
 //comicInfo();

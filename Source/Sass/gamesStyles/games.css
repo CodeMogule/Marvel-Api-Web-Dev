@@ -121,6 +121,7 @@ header h1 {
 }
 
 #games .game-box {
+  margin: 10px;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -137,7 +138,7 @@ header h1 {
 }
 
 #games .game-box img {
-  width: 100%;
+  width: 80%;
   height: auto;
   cursor: pointer;
   border-radius: 10px;
@@ -543,14 +544,53 @@ header h1 {
 }
 
 @media only screen and (min-width: 991px) and (max-width: 1235px) {
-  h3 {
+  .img-header h3 {
     text-align: center !important;
   }
 }
 
 @media only screen and (min-width: 1235px) {
-  h3 {
+  .img-header h3 {
     text-align: center !important;
+  }
+}
+
+#games .main-games-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+#games .row {
+  width: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-games-box {
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .main-games-box .game-box {
+    margin: 5px;
+  }
+  .main-games-box .game-box h3 {
+    font-size: 60% !important;
+  }
+  .main-games-box .game-box p {
+    font-size: 45% !important;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .game-box {
+    margin: 10px;
+  }
+  .game-box h3 {
+    font-size: 60% !important;
+  }
+  .game-box p {
+    font-size: 45% !important;
   }
 }
 
