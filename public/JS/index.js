@@ -9,6 +9,8 @@ import * as swipe from './swiper';
 
 let counter = 1;
 
+console.log(6)
+
 try{
 window.headerSlider = new Slider()
 headerSlider.sliderWipe(counter);

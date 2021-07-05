@@ -226,6 +226,8 @@ $my-red-black:#7a0000;
             -moz-transform: translate(0,40px);
             -ms-transform: translate(0,40px);
             -o-transform: translate(0,40px);
+            position: relative;
+            bottom: 50px;
 
             li{
                 margin: 30px;

@@ -12,6 +12,10 @@ header h1 {
   margin: -30px;
 }
 
+.background-header h1 {
+  font-family: 'Bebas Neue', cursive;
+}
+
 .main-lists {
   transform: translate(-230px, -150px) !important;
   -webkit-transform: translate(-230px, -150px) !important;

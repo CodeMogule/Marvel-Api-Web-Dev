@@ -11,6 +11,10 @@ header h1 {
   margin: -30px;
 }
 
+.background-header h1 {
+  font-family: 'Bebas Neue', cursive;
+}
+
 .main-lists {
   transform: translate(-230px, -150px) !important;
   -webkit-transform: translate(-230px, -150px) !important;
@@ -371,6 +375,8 @@ header h1 {
     -moz-transform: translate(0, 40px);
     -ms-transform: translate(0, 40px);
     -o-transform: translate(0, 40px);
+    position: relative;
+    bottom: 50px;
   }
   .mobile-nav .mobile-list-container li {
     margin: 30px;
@@ -419,7 +425,7 @@ header h1 {
     display: none;
   }
   .background-header h1 {
-    font-size: 150%;
+    font-size: 200% !important;
   }
   .background-header .searches {
     display: none;
@@ -485,6 +491,8 @@ header h1 {
     -moz-transform: translate(0, 40px);
     -ms-transform: translate(0, 40px);
     -o-transform: translate(0, 40px);
+    position: relative;
+    bottom: 50px;
   }
   .mobile-nav .mobile-list-container li {
     margin: 30px;
@@ -533,7 +541,7 @@ header h1 {
     display: none;
   }
   .background-header h1 {
-    font-size: 160%;
+    font-size: 220% !important;
   }
   .background-header .searches {
     display: none;
@@ -602,6 +610,8 @@ header h1 {
     -moz-transform: translate(0, 40px);
     -ms-transform: translate(0, 40px);
     -o-transform: translate(0, 40px);
+    position: relative;
+    bottom: 50px;
   }
   .mobile-nav .mobile-list-container li {
     margin: 30px;
@@ -650,7 +660,7 @@ header h1 {
     display: none;
   }
   .background-header h1 {
-    font-size: 160%;
+    font-size: 225%;
   }
   .background-header .searches {
     display: none;

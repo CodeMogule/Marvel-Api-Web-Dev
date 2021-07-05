@@ -9,7 +9,7 @@ export async function getSearch(query){
         console.log(dataRes.description)
         console.log(111)
         const markup = `
-        <a onclick="getCharacterId(${dataRes.id})"">
+        <a href="charactersInfo.html" onclick="getCharacterId(${dataRes.id})">
         <img src="${dataRes.thumbnail.path}${url}${dataRes.thumbnail.extension}" alt="">
         <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 230 46" style="width: 100%;" class="border-design">
           <defs>

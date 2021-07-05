@@ -1,7 +1,26 @@
 @import './config';
 
 @include extra-small-devices{
+    header{
+        .background-header{
+        h1{
+            font-size: 200% !important;
+            transform: translate(-10%,2%);
+            -webkit-transform: translate(-10%,2%);
+            -moz-transform: translate(-10%,2%);
+            -ms-transform: translate(-10%,2%);
+            -o-transform: translate(-10%,2%);
+        }
+}
+    }
+.slider{
+    position: relative;
+    bottom: 39px;
 
+    h1{
+        font-size: 100% !important;
+    }
+}
     @include minimize;
 
     .main-lists{
@@ -395,14 +414,44 @@ h1{
 
 
 @media only screen and (max-height:750px) {
+    header{
+        h1{
+            transform: translate(-10%,-5%);
+            -webkit-transform: translate(-10%,-5%);
+            -moz-transform: translate(-10%,-5%);
+            -ms-transform: translate(-10%,-5%);
+            -o-transform: translate(-10%,-5%);
+}
+    }
     .navigation-btn{
         margin: 70px;
     }
 }
 
-@media only screen and (min-height:1000px) {
+@media only screen and (min-height:750px) {
+    header{
+        h1{
+            transform: translate(-10%,10%);
+            -webkit-transform: translate(-10%,10%);
+            -moz-transform: translate(-10%,10%);
+            -ms-transform: translate(-10%,10%);
+            -o-transform: translate(-10%,10%);
+}
+    }
     .navigation-btn{
         margin: 30%;
+    }
+}
+
+@media only screen and (min-height:793px) {
+    header{
+        h1{
+            transform: translate(-10%,2%);
+            -webkit-transform: translate(-10%,2%);
+            -moz-transform: translate(-10%,2%);
+            -ms-transform: translate(-10%,2%);
+            -o-transform: translate(-10%,2%);
+}
     }
 }
 //
@@ -419,6 +468,9 @@ h1{
 
     header{
         background-position: center;
+        h1{
+            font-size: 200% !important;
+        }
         .slider-custom{
       z-index: -5;
       transform: translateX(-20px);
@@ -433,7 +485,7 @@ h1{
     -moz-transform: translate(0,-300%);
     -ms-transform: translate(0,-300%);
     -o-transform: translate(0,-300%);
-    font-size: 95%;
+    font-size: 110% !important;
     white-space:normal;
 }
 
@@ -709,6 +761,9 @@ h1{
 
     header{
         background-position: center;
+        h1{
+            font-size: 200% !important;
+        }
         .slider-custom{
       z-index: -5;
       transform: translateX(10%);
@@ -722,7 +777,7 @@ h1{
     -moz-transform: translate(0,-300%);
     -ms-transform: translate(0,-300%);
     -o-transform: translate(0,-300%);
-    font-size: 95%;
+    font-size: 130% !important;
     white-space:normal;
 }
 

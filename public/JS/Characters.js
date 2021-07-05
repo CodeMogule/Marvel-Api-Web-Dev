@@ -16,7 +16,7 @@ export class Characters{
         this.dataResult.slice(0,10).forEach((cur)=>{
           let markup  = `
           <li class = 'character-items'>
-          <a onclick="getCharacterId(${cur.id})">
+          <a href="charactersInfo.html" onclick="getCharacterId(${cur.id})" draggable="false">
          <img src="${cur.thumbnail.path}${u}${cur.thumbnail.extension}" alt=""  draggable="false">
              <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 230 46" style="width: 100%;" class="border-design">
                <defs>
@@ -64,7 +64,7 @@ export class Characters{
         const u = `/portrait_fantastic.`;
         this.dataResult.forEach((items)=>{
           const addHtml = `
-          <a onclick="getCharacterId(${items.id})">
+          <a href="charactersInfo.html" onclick="getCharacterId(${items.id})">
           <img src="${items.thumbnail.path}${u}${items.thumbnail.extension}" alt="">
           <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 230 46" style="width: 100%;" class="border-design">
             <defs>
@@ -174,12 +174,8 @@ export class Characters{
 
     }
 
-    console.log(`test`)
-
     window.getCharacterId = function(id){
       window.sessionStorage.setItem('characterId',id)
-      window.location = 'charactersinfo.html';
-      return false
     }
 
   
