@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Vendors/CSS/7.1 Grid.css">
+    <link rel="stylesheet" href="./Vendors/CSS/normalize.css">
+    <link rel="stylesheet" href="./Sass/Style.css">
+    <link rel="icon" href="./IMAGES/favicon.png" type="image/gif" sizes="16x16">
+    <title>HeroLab</title>
+</head>
+<body>
+  
+    <header>
+      <div class="background-header">
+        <h1>herolab</h1>
+        <i class="fas fa-bars toggle-bar" onclick="toggleAction()"></i>
+        <div class="row">
+          <nav class="mobile-nav" style="background-image: url(./IMAGES/nav-lava.jpg);">
+            <label>
+                <i class="far fa-times-circle close-circle" onclick="closeAction()"></i>
+            </label>
+            <ul class="mobile-list-container">
+        
+                <div class="mobile-searches">
+                    <a href="./searchview.html">
+                      <h6><i class="fas fa-search"></i> Search</h6>
+                    </a>
+                  </div>
+        
+                <li><a href="./games.html">Games</a></li>
+                    <li><a href="./characters.html">Characters</a></li>
+                    <li><a href="./comics.html">Comics</a></li>
+                    <li><a href="">Home</a></li>
+            </ul>
+        </nav>
+        <ul class="main-lists">
+            <div class="bod-lists">
+                <li><a href="./games.html">Games</a></li>
+                <li><a href="./characters.html">Characters</a></li>
+                <li><a href="./comics.html">Comics</a></li>
+                <li><a href="">Home</a></li>
+            </div>
+        </ul>
+        <div class="searches">
+          <a href="./searchview.html">
+            <h6><i class="fas fa-search"></i> Search</h6>
+          </a>
+        </div>
+        </div>
+      </div>
+
+        <div class="row">
+        <div class="slider">
+          <div class="slider-custom"  style="display: block;">
+            <img src="./IMAGES/Spider-man Miles(1).png" alt="Spider-Man">
+            <h1>Spider-Man: Miles Morales</h1>
+            <p>Peter befriends Miles after his father's death, introducing him to the non-profit F.E.A.S.T. shelter so he can serve as a volunteer. Miles is unaware of Peter's secret identity as the masked vigilante Spider-Man, whom Miles idolizes. He eventually gains spider-like powers himself, which he reveals to Peter, who in turn reveals being Spider-Man. Under Peter's guidance, Miles attempts to step up as New York City's next superhero.</p>
+            <a href="https://www.playstation.com/en-kw/games/marvels-spider-man-miles-morales/" class="btn-header">BUY NOW</a>
+          </div>
+
+          <div class="slider-custom">
+            <img src="./IMAGES/iron-man.png" alt="iron-man">
+            <h1>about iron-man</h1>
+            <p>Genius. Billionaire. Philanthropist. Tony Stark's confidence is only matched by his high-flying abilities as the hero called Iron Man.</p>
+            <a onclick="getCharacterId(1009368)" class="btn-header">MORE INFO</a>
+          </div>
+
+          <div class="slider-custom">
+            <img src="./IMAGES/captain america.png" alt="captain-america">
+            <h1>captain america comics</h1>
+            <p>Captain America is a superhero appearing in American comic books published by Marvel Comics. Created by cartoonists Joe Simon and Jack Kirby, the character first appeared in Captain America Comics #1 (cover dated March 1941) from Timely Comics, a predecessor of Marvel Comics. Captain America was designed as a patriotic supersoldier who often fought the Axis powers of World War II and was Timely Comics' most popular character during the wartime period.</p>
+            <a onclick = "getCharacterId(1009220)" class="btn-header">VIEW COMICS</a>
+          </div>
+          
+          </div>
+          </div>
+            <div class="btn-slider">
+            <button href="" class="left" onclick="headerSlider.addSlider(-1)"><i class="fas fa-chevron-left"></i></button>
+            <button href="" class="right" onclick="headerSlider.addSlider(1)"><i class="fas fa-chevron-right"></i></button>
+            </div>
+
+            <div class="navigation-btn">
+              <div class="dot" onclick="headerSlider.currslider(1)"></div>
+              <div class="dot" onclick="headerSlider.currslider(2)"></div>
+              <div class="dot" onclick="headerSlider.currslider(3)"></div>
+            </div>
+    </header>
+
+
+    <section id = "characters">
+        <div class="row">
+        <h1>Characters</h1>
+        <div class="character-btn">
+        <button onclick="scrollRight()"><i class="fas fa-chevron-right"></i></button>
+        <button onclick="scrollLeftz()"><i class="fas fa-chevron-left"></i></button>
+        </div>
+
+        <div class="characters-img-container">
+          <ul class="img-item-container" style="visibility: visible;">
+           
+          </ul>
+        </div>
+        </div>
+    </section>
+
+    <section id="comics">
+      <div class="row">
+        <h1>new releases comics</h1>
+
+        <div class="comic-btn">
+        <a href="./comics.html">
+          SEE ALL
+        </a>
+        </div>
+        <div class="comics-main-container">
+        <div class="col span_1_of_4 box">
+          <a href="https://www.marvel.com/comics/issue/92987/morbius_bond_of_blood_2021_1">
+            <img src="./IMAGES/mob.jpg" alt="">
+            <h3>Morbius: Bond Of Blood (2021)</h3>
+            <p>Ralph Macchio</p>
+            <p>$3.99</p>
+</a>
+          </div>
+          
+          
+          <div class="col span_1_of_4 box">
+            <a href="https://www.marvel.com/comics/issue/89514/the_amazing_spider-man_2018_59">
+            <img src="./IMAGES/spidey comic.jpg" alt="">
+            <h3> The Amazing Spider-Man</h3>
+            <p>Nick Spencer</p>
+            <p>$3.99</p>
+           </a>
+          </div>
+          <div class="col span_1_of_4 box">
+            <a href="https://www.marvel.com/comics/issue/89544/captain_america_2018_29">
+            <img src="./IMAGES/hulk comisc.jpg" alt="">
+            <h3>Immortal Hulk: Time of Monsters</h3>
+            <p>Al Ewing</p>
+            <p>$4.99</p>
+           </a>
+          </div>
+          <div class="col span_1_of_4 box">
+            <a href="https://www.marvel.com/comics/issue/93047/immortal_hulk_time_of_monsters_1_2021_1">
+            <img src="./IMAGES/cap comics.jpg" alt="">
+            <h3>Captain America (2018)</h3>
+            <p>Ta-Nehisi Coates</p>
+            <p>$3.99</p>
+          </div>
+        </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="marvel-games">
+      <div class="row">
+        <h1>Best Marvel Games</h1>
+        <div class="games-main-container">
+      <div class="col span-1-of-3 box-game">
+        <img src="./IMAGES/miles ps4 game.jpg" alt="">
+        <h3>Spider-Man: Miles Morales</h3>
+        <p>2020</p>
+        </div>
+
+        <div class="col span-1-of-3 box-game">
+          <img src="./IMAGES/peter ps4 game.jpg" alt="">
+          <h3>Marvel's Spider-Man</h3>
+          <p>2018</p>
+          </div>
+
+          <div class="col span-1-of-3 box-game">
+            <img src="./IMAGES/marvel avenger.jpg" alt="">
+            <h3>Marvel's avenger</h3>
+            <p>2020</p>
+            </div>
+          </div>
+    </section>
+
+    <footer>
+      <div class="text-footer">
+      <h5>Made by TheAzizMoh</h5>
+      <p>Powered by @marvel</p>
+      </div>
+    </footer>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+     <script src="https://kit.fontawesome.com/fc8b51f2eb.js" crossorigin="anonymous"></script>
+     <script type="text/javascript" defer src="./finalJS/JS/bundle.js"></script>
+</body>
+</html>

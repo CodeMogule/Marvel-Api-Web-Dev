@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Vendors/CSS/7.1 Grid.css">
+    <link rel="stylesheet" href="./Vendors/CSS/normalize.css">
+    <link rel="stylesheet" href="./Sass/gamesStyles/games.css">
+    <link rel="icon" href="./IMAGES/favicon.png" type="image/gif" sizes="16x16">
+    <title>Games| HeroLab</title>
+</head>
+<body>
+    <header>
+        <div class="background-header">
+          <h1>herolab</h1>
+          <i class="fas fa-bars toggle-bar" onclick="toggleAction()"></i>
+          <div class="row" style="width: auto;">
+            <nav class="mobile-nav" style="background-image: url(./IMAGES/nav-lava.jpg); width: 108vw; height: 108vh;">
+                <label>
+                    <i class="far fa-times-circle close-circle" onclick="closeAction()"></i>
+                </label>
+                <ul class="mobile-list-container">
+            
+                    <div class="mobile-searches">
+                        <a href="./searchview.html">
+                          <h6><i class="fas fa-search"></i> Search</h6>
+                        </a>
+                      </div>
+            
+                    <li><a href="">Games</a></li>
+                        <li><a href="./characters.html">Characters</a></li>
+                        <li><a href="./comics.html">Comics</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                </ul>
+            </nav>
+          <ul class="main-lists">
+              <div class="bod-lists">
+                  <li><a href="">Games</a></li>
+                  <li><a href="./characters.html">Characters</a></li>
+                  <li><a href="./comics.html">Comics</a></li>
+                  <li><a href="./index.html">Home</a></li>
+              </div>
+          </ul>
+          <div class="searches">
+          <a href="./searchview.html">
+            <h6><i class="fas fa-search"></i> Search</h6>
+          </a>
+          </div>
+        </div>
+        </header>
+
+        <div class="img-header" style="background:linear-gradient(rgba(3, 3, 3, 0.514), rgba(3, 3, 3, 0.596)), url('./IMAGES/peter&miles.jpg')">
+            <h3>Games</h3>
+        </div>
+
+        <section id="games">
+            <div class="row">
+                <div class="main-games-box">
+                <div class="col span-1-of-3 game-box">
+                    <img src="./IMAGES/guardian of the galaxy.jpg" alt="">
+                    <h3>Marvel's Guardians of the Galaxy</h3>
+                    <p>OCT 26 2021</p>
+                    </div>
+                <div class="col span-1-of-3 game-box" >
+                    <img src="./IMAGES/miles ps4 game.jpg" alt="">
+                    <h3>Spider-Man: Miles Morales</h3>
+                    <p>2020</p>
+                     </div>
+                <div class="col span-1-of-3 game-box">
+                    <img src="./IMAGES/marvel avenger.jpg" alt="">
+                         <h3>Marvel's avenger</h3>
+                          <p>2020</p>
+                     </div>
+
+                <div class="col span-1-of-3 game-box">
+                    <img src="./IMAGES/alliance.jpg" alt="">
+                    <h3>MARVEL ULTIMATE ALLIANCE 3</h3>
+                     <p>2019</p>
+                </div>
+                <div class="col span-1-of-3 game-box">
+                    <img src="./IMAGES/peter ps4 game.jpg" alt="">
+                    <h3>Marvel's Spider-Man</h3>
+                       <p>2018</p>
+                             </div>
+                    
+                <div class="col span-1-of-3 game-box">
+                    <img src="./IMAGES/contest.jpg" alt="">
+                     <h3>CONTEST OF CHAMPIONS</h3>
+                        <p>2015</p>
+                              </div>
+            </div>
+            </div>
+        </section>
+        <script src="https://kit.fontawesome.com/fc8b51f2eb.js" crossorigin="anonymous"></script>
+        <script src="./finalJS/JS/bundle.js"></script>
+</body>
+</html>

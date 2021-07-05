@@ -1,0 +1,41 @@
+#games{
+    .main-games-box{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .row{
+        width: auto;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .main-games-box{
+        grid-template-columns: repeat(2,1fr) !important;
+
+        .game-box{
+            margin: 5px;
+            h3{
+                font-size: 60% !important;
+            }
+
+            p{
+                font-size: 45% !important;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:767px) {
+    .game-box{
+        margin: 10px;
+        h3{
+            font-size: 60% !important;
+        }
+
+        p{
+            font-size: 45% !important;
+        }
+    }
+}
+

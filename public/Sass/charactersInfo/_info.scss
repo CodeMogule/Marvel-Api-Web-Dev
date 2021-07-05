@@ -1,0 +1,62 @@
+@import '../config';
+
+.info-container{
+    background-color: $perfect-black;
+    position: relative;
+    height: 100vh;
+
+    @include spinner;
+    @include rotation;
+
+    .img-container{
+        position: relative;
+        img{
+            height: auto;
+            width: 30%;
+            position: absolute;
+            left: 10%;
+        }
+    }
+
+    .description-container{
+        position: absolute;
+        bottom: 30%;
+        left: 50%;
+}
+         
+        p{ width: 70%;
+        }
+    }
+
+
+.characters-comics-container{
+
+    h1{
+        color: #000
+    }
+
+    @include spinner;
+    @include rotation;
+
+    padding-top: 30px;
+    padding-left:20px;
+
+    .character-comics{
+        margin: 15px;
+      display: inline-block;
+
+      &:hover{
+          @include up-movement
+      }
+
+        img{
+            width: auto;
+            height: auto;
+        }
+
+        h3{
+            color: #000;
+            font-size: 90%;
+        }
+    }
+}

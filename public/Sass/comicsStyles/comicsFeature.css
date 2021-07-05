@@ -1,0 +1,15 @@
+.comics {
+  padding-top: 30px;
+}
+
+.comics .comics-feature .comics-display img {
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+/*# sourceMappingURL=comicsFeature.css.map */

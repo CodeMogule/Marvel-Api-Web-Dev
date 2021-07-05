@@ -1,0 +1,25 @@
+@import './navigations';
+@import './imgHeader';
+@import './games-img-box';
+@import '../mobile-nav';
+@import '../mobile-img-header';
+@import '../gamesStyles/mobile-styles';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-size: 20px;
+    background-color: rgb(218, 216, 216);
+    font-family: lato;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.row{
+    margin: auto;
+    width: 1140px;
+}

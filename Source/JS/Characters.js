@@ -150,6 +150,7 @@ export class Characters{
       }
 
         async getSingleComics(){
+          try{
           let characterId = sessionStorage.getItem('characterId')
           const singleComics = await axios(`https://gateway.marvel.com/v1/public/characters/${characterId}/comics?ts=1&apikey=adfbe33f945bd7bbefc6420a1fe57e84&hash=36d9c6c7b4db64ac4ca23f0fa90cdb40`);
           const dataComics = singleComics.data.data.results;
@@ -164,8 +165,11 @@ export class Characters{
                 </a>
             </div>
             `
-            elements.comicCon.insertAdjacentHTML('beforeend',comicMarkup)
+            elements.characterHolder.insertAdjacentHTML('beforeend',comicMarkup)
           })
+        }catch(error){
+
+        }
         }
 
     }
